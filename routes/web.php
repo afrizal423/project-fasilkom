@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('public/landing');
 });
 Route::group(['middleware' => ['web']], function () {
     Auth::routes();

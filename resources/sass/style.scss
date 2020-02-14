@@ -1,0 +1,62 @@
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, .4);
+
+  .fa-bars {
+    color: white;
+  }
+
+  &-brand img {
+    height: 60px;
+  }
+
+  .nav-item:hover {
+    .nav-link:not(.active) {
+      color: lightgrey;
+      text-decoration: underline;
+    }
+  }
+
+  .nav-link:not(.active) {
+    color: white;
+  }
+
+  .active {
+    color: lightgrey;
+    pointer-events: none;
+  }
+
+  .dropdown-item:hover {
+    text-decoration: underline;
+  }
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#pengumuman {
+  width: 100%;
+  height: 200px;
+  background-color: #F4511E;
+
+  ul {
+    column-count: 2;
+  }
+}
