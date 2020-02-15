@@ -4,9 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fakultas Ilmu Komputer | UPN "Veteran" Jawa Timur</title>
+
+  <!-- Bootstrap.css CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/95bb444f38.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-  <!-- Favicons-->
+
+  <!-- Favicons -->
   <link rel="icon" href="{{ asset('images/logo.png') }}" sizes="32x32">
 </head>
 <body class="container-fluid">
@@ -16,7 +24,13 @@
       <a href="#" class="navbar-brand">
         <img src="{{ asset('images/logo2.png') }}" alt="Logo UPN 'Veteran Jawa Timur'">
       </a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavCollapse" aria-controls="navbarNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      
+      <button type="button" 
+              class="navbar-toggler" 
+              data-toggle="collapse" 
+              data-target="#navbarNavCollapse" aria-controls="navbarNavCollapse" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
 
@@ -40,7 +54,9 @@
               <a href="" class="dropdown-item">Beasiswa</a>
             </div>
           </li>
-          <li class="nav-item"><a href="ormawa.html" class="nav-link">Ormawa</a></li>
+          <li class="nav-item">
+            <a href="ormawa.html" class="nav-link">Ormawa</a>
+          </li>
           <li class="nav-item dropdown">
             <a href="#"
                 id="navbarDropdown"

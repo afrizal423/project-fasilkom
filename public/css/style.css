@@ -10,7 +10,7 @@ header {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .navbar .fa-bars {
   color: white;
@@ -45,11 +45,94 @@ header {
 
 #pengumuman {
   width: 100%;
-  height: 200px;
+  height: 250px;
   background-color: #F4511E;
+  color: #ffecb3;
+  padding: 20px 60px 0;
+  box-sizing: border-box;
+}
+#pengumuman h2 {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+#pengumuman .pagination .page-item .page-link {
+  font-size: 70%;
+  border-radius: 0;
+  color: #F4511E;
+  border: none;
 }
 #pengumuman ul {
-  column-count: 2;
+  list-style-type: none;
+}
+#pengumuman ul li {
+  margin-bottom: 5px;
+}
+#pengumuman ul li a {
+  color: #ffecb3;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 110%;
+  }
+
+  .navbar ul li {
+    text-align: end;
+  }
+  .navbar ul li a {
+    font-size: 120%;
+  }
+
+  #pengumuman {
+    height: 450px;
+  }
+  #pengumuman ul li {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    font-size: 110%;
+  }
+
+  #pengumuman {
+    padding: 30px 90px 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  #pengumuman {
+    position: relative;
+    height: 500px;
+    padding: 30px 40px 0;
+  }
+  #pengumuman #pengumuman-item > ul:last-of-type {
+    display: none;
+  }
+  #pengumuman #nav-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 375px) {
+  #pengumuman {
+    padding: 30px 30px 0;
+  }
+  #pengumuman h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  #pengumuman {
+    font-size: 90%;
+    height: 480px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
