@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap");
+footer form input, footer form textarea {
+  background-color: black;
+  border-radius: 7px;
+  border: 1px solid #999;
+  color: #fff;
+  font-size: 70%;
+  letter-spacing: 2px;
+  font-family: "Roboto Mono";
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+footer form input:focus, footer form textarea:focus {
+  background-color: black;
+  box-shadow: none;
+  border: 1.5px solid #fff;
+}
+
 .container-fluid {
   padding: 0;
   margin: 0;
@@ -11,6 +30,10 @@ header {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.6);
+}
+.navbar .container {
+  padding: 10px;
+  box-sizing: border-box;
 }
 .navbar .fa-bars {
   color: white;
@@ -45,30 +68,160 @@ header {
 
 #pengumuman {
   width: 100%;
-  height: 250px;
+  height: auto;
   background-color: #F4511E;
   color: #ffecb3;
-  padding: 20px 60px 0;
+  padding: 20px 60px 60px;
   box-sizing: border-box;
 }
 #pengumuman h2 {
   margin-bottom: 20px;
   font-weight: bolder;
 }
-#pengumuman .pagination .page-item .page-link {
+
+.pagination .page-link {
   font-size: 70%;
   border-radius: 0;
   color: #F4511E;
   border: none;
 }
-#pengumuman ul {
+
+#pengumuman-item li {
+  margin-bottom: 5px;
   list-style-type: none;
 }
-#pengumuman ul li {
+#pengumuman-item li a {
+  color: #ffecb3;
+}
+
+#events {
+  margin-top: 100px;
+  height: auto;
+}
+
+.event-item {
+  height: auto;
+  margin-bottom: 60px;
+}
+.event-item .event-date {
+  text-align: center;
+}
+.event-item .event-date .date {
+  font-size: 500%;
+  margin-bottom: -50px;
+}
+.event-item .event-date .month {
+  font-size: 200%;
+  line-height: 5px;
+}
+.event-item .event-img a {
+  position: relative;
+  display: block;
+  width: 290px;
+  height: 130px;
+  background-color: black;
+}
+.event-item .event-img a > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.event-item .event-img a img {
+  height: 100%;
+}
+.event-item .event-img a .hover-preview {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.event-item .event-img a:hover .hover-preview {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+#berita {
+  padding-bottom: 70px;
+}
+
+#berita-content > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.berita-item {
+  width: 23%;
+  margin: 2%;
+  height: 300px;
+  margin: 10px;
+  background-color: black;
+  border: 1px solid white;
+}
+.berita-item:first-of-type {
+  margin-left: 0;
+}
+.berita-item:nth-child(5) {
+  margin-left: 0;
+}
+
+footer {
+  background-color: #111;
+  box-sizing: border-box;
+  height: auto;
+  padding-bottom: 30px;
+}
+footer > div {
+  margin-top: 30px;
+}
+footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+}
+
+footer .row > div {
+  height: 300px;
+  margin: 10px;
+  padding: 20px 0 0;
+  border-top: 2px solid #999;
+  color: white;
+}
+footer .row > div h3 {
+  font-family: "Roboto Mono";
+  font-size: 110%;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+footer form {
+  width: 90%;
+}
+footer form textarea {
+  resize: none;
+  overflow: auto;
+  height: 100px;
+  padding: 10px 0 0 15px;
   margin-bottom: 5px;
 }
-#pengumuman ul li a {
-  color: #ffecb3;
+footer form textarea:focus::placeholder {
+  color: transparent;
+}
+footer form input {
+  padding: 10px 0 10px 15px;
+}
+footer form input:focus::placeholder {
+  color: transparent;
+}
+footer form button {
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: black;
+  padding: 5px 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -88,9 +241,6 @@ header {
     font-size: 120%;
   }
 
-  #pengumuman {
-    height: 450px;
-  }
   #pengumuman ul li {
     margin-bottom: 15px;
   }
@@ -107,8 +257,7 @@ header {
 @media screen and (max-width: 425px) {
   #pengumuman {
     position: relative;
-    height: 500px;
-    padding: 30px 40px 0;
+    padding: 30px 40px 60px;
   }
   #pengumuman #pengumuman-item > ul:last-of-type {
     display: none;
@@ -122,7 +271,7 @@ header {
 }
 @media screen and (max-width: 375px) {
   #pengumuman {
-    padding: 30px 30px 0;
+    padding: 30px 30px 60px;
   }
   #pengumuman h2 {
     text-align: center;
@@ -131,7 +280,6 @@ header {
 @media screen and (max-width: 320px) {
   #pengumuman {
     font-size: 90%;
-    height: 480px;
   }
 }
 

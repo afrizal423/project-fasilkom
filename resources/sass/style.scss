@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap');
+@import 'placeholders';
+
 .container-fluid {
   padding: 0;
   margin: 0;
@@ -11,6 +14,11 @@ header {
 
 .navbar {
   background-color: rgba(0, 0, 0, .6);
+
+  .container {
+    padding: 10px;
+    box-sizing: border-box;
+  }
 
   .fa-bars {
     color: white;
@@ -27,11 +35,8 @@ header {
     }
   }
 
-  .nav-link {
-
-    &:not(.active) {
+  .nav-link:not(.active) {
       color: white;
-    }
   }
 
   .active {
@@ -56,124 +61,203 @@ header {
 
 #pengumuman {
   width: 100%;
-  height: 250px;
+  height: auto;
   background-color: #F4511E;
   color: #ffecb3;
 
-  padding: 20px 60px 0;
+  padding: 20px 60px 60px;
   box-sizing: border-box;
 
   h2 {
     margin-bottom: 20px;
     font-weight: bolder;
   }
+}
 
-  .pagination {
-
-    .page-item {
-
-      .page-link {
-        font-size: 70%;
-        border-radius: 0;
-        color: #F4511E;
-        border: none;
-      }
-    }
+.pagination {
+  .page-link {
+    font-size: 70%;
+    border-radius: 0;
+    color: #F4511E;
+    border: none;
   }
+}
 
-  ul {
+#pengumuman-item {
+
+  li {
+    margin-bottom: 5px;
     list-style-type: none;
 
-    li {
-      margin-bottom: 5px;
-
-      a {
-        // color: #FCC07F;
-        color: #ffecb3;
-      }
+    a {
+      // color: #FCC07F;
+      color: #ffecb3;
     }
   }
 }
 
-@media screen and (max-width: 1024px){
-  body {
-    font-size: 90%;
-  }
+#events {
+  margin-top: 100px;
+  height: auto;
 }
 
-@media screen and (max-width: 768px){
-  body {
-    font-size: 110%;
+.event-item {
+  height: auto;
+  margin-bottom: 60px;
+
+  .event-date {
+    text-align: center;
+
+    .date {
+      font-size: 500%;
+      margin-bottom: -50px;
+    }
+  
+    .month {
+      font-size: 200%;
+      line-height: 5px;
+    }
   }
 
-  .navbar {
+  .event-img {
 
-    ul {
-      li {
-        text-align: end;
+    a {
+      position: relative;
+      display: block;
+      width: 290px;
+      height: 130px;
+      background-color: black;
 
-        a {
-          font-size: 120%;
+      & > * {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      img {
+        height: 100%;
+      }
+
+      .hover-preview {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: 2;
+        opacity: 0;
+        transition: opacity .5s;
+      }
+
+      &:hover {
+        .hover-preview {
+          opacity: 1;
+          transition: opacity .5s;
         }
       }
     }
   }
+}
 
-  #pengumuman {
-    height: 450px;
+#berita {
+  padding-bottom: 70px;
+}
 
-    ul{
-      li {
-        margin-bottom: 15px;
+#berita-content > div {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.berita-item {
+  width: 23%;
+  margin: 2%;
+  height: 300px;
+  margin: 10px;
+  background-color: black;
+  border: 1px solid white;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:nth-child(5) {
+    margin-left: 0;
+  }
+
+}
+
+footer {
+  background-color: #111;
+  box-sizing: border-box;
+  height: auto;
+  padding-bottom: 30px;
+
+  & > div {
+    margin-top: 30px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+  }
+}
+
+footer .row > div {
+  height: 300px;
+  margin: 10px;
+  padding: 20px 0 0;
+  border-top: 2px solid #999;
+  color: white;
+
+  h3 {
+    font-family: 'Roboto Mono';
+    font-size: 110%;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+}
+
+footer form {
+  width: 90%;
+
+  textarea {
+    @extend %form-style;
+    resize: none;
+    overflow: auto;
+    height: 100px;
+    padding: 10px 0 0 15px;
+    margin-bottom: 5px;
+
+    &:focus {
+      @extend %form-focus;
+
+      &::placeholder {
+        color: transparent;
       }
     }
   }
-}
 
-@media screen and (min-width: 1025px) and (max-width: 1440px){
-  body {
-    font-size: 110%;
-  }
+  input {
+    @extend %form-style;
+    padding: 10px 0 10px 15px;
 
-  #pengumuman {
-    padding: 30px 90px 0;
-  }
-}
+    &:focus {
+      @extend %form-focus;
 
-@media screen and (max-width: 425px){
-  #pengumuman {
-    position: relative;
-    height: 500px;
-    padding: 30px 40px 0;
-
-    #pengumuman-item > ul:last-of-type {
-      display: none;
-    }
-
-    #nav-pagination {
-      position: absolute;
-
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      &::placeholder {
+        color: transparent;
+      }
     }
   }
-}
 
-@media screen and (max-width: 375px){
-  #pengumuman {
-    padding: 30px 30px 0;
-
-    h2 {
-      text-align: center;
-    }
+  button {
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: black;
+    padding: 5px 20px;
   }
 }
 
-@media screen and (max-width: 320px){
-  #pengumuman {
-    font-size: 90%;
-    height: 480px;
-  }
-}
+@import 'media';

@@ -1,0 +1,17 @@
+%form-style {
+  background-color: black;
+  border-radius: 7px;
+  border: 1px solid #999;
+  color: #fff;
+  font-size: 70%;
+  letter-spacing: 2px;
+  font-family: 'Roboto Mono';
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+%form-focus {
+  background-color: black;
+  box-shadow: none;
+  border: 1.5px solid #fff;
+}
