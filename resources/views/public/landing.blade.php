@@ -1,5 +1,5 @@
 @include('public.templates.pubHeader')
-  
+
   <main>
     <section id="pengumuman" class="">
       <div class="container">
@@ -37,11 +37,11 @@
             </li>
             <li>
               <a href="">
-                <i class="fa fa-bullhorn"></i> [26 Sep 2019] <strong>Beasiswa Unggulan Bank Indonesia</strong>
+                <i class="fa fa-bullhorn"></i>[26 Sep 2019] <strong>Beasiswa Unggulan Bank Indonesia</strong>
               </a>
             </li>
           </ul>
-  
+
           <ul class="col-sm">
             <li>
               <a href="">
@@ -92,7 +92,7 @@
             <a href="">
               <img src="{{ asset('images/poster1.jpg') }}" alt="">
               <div class="hover-preview">
-                
+
               </div>
             </a>
           </div>
@@ -114,7 +114,7 @@
             <a href="">
               <img src="{{ asset('images/poster2.jpg') }}" alt="">
               <div class="hover-preview">
-                
+
               </div>
             </a>
           </div>
@@ -136,7 +136,7 @@
             <a href="">
               <img src="{{ asset('images/poster3.jpg') }}" alt="">
               <div class="hover-preview">
-                
+
               </div>
             </a>
           </div>
@@ -160,5 +160,5 @@
       </div>
     </section>
   </main>
-  
+
 @include('public.templates.pubFooter')

@@ -21,7 +21,26 @@ Route::group(['middleware' => ['web']], function () {
     });
     Route::get('/dashboard/admin', 'AdminController@index')->name('admin');
 
-    Route::get('/dashboard/admin/mahasiswa', 'MahasiswaController@index')->name('mahasiswa');
+    //Route::get('/dashboard/admin/mahasiswa', 'MahasiswaController@index')->name('mahasiswa');
+
+    Route::resource("/dashboard/admin/mahasiswa", "MahasiswaController");
+
+    Route::resource("/dashboard/admin/mahasiswa/ta", "TugasakhirController");
+
+    Route::resource("/dashboard/admin/mahasiswa/prestasi", "PrestasiController");
+
+    Route::resource("/dashboard/admin/berita", "BeritaController");
+
+    Route::resource("/dashboard/admin/event", "EventController");
+
+    Route::resource("/dashboard/admin/pengumuman", "PengumumanController");
+
+    Route::resource("/dashboard/admin/alumni", "AlumniController");
+
+
+
+
+
 
 
     Route::get('/home', 'HomeController@index')->name('home');

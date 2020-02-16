@@ -41,8 +41,8 @@
     <div class="scrollbar-inner">
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
-        <a class="navbar-brand" href="../../pages/dashboards/dashboard.html">
-          <img src="../../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+        <a class="navbar-brand" href="{{url('dashboard/admin')}}">
+          <img src="{{ asset('images/logo3.png') }}" class="navbar-brand-img" alt="Fasilkom">
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->
@@ -60,12 +60,12 @@
         <div class="collapse navbar-collapse" id="sidenav-collapse-main">
           <!-- Nav items -->
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#navbar-dashboards" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-dashboards">
+            {{-- <li class="nav-item">
+              <a class="nav-link" href="#navbar-dashboards" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-dashboards">
                 <i class="ni ni-shop text-primary"></i>
                 <span class="nav-link-text">Dashboards</span>
               </a>
-              <div class="collapse show" id="navbar-dashboards">
+              <div class="collapse" id="navbar-dashboards">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
                     <a href="../../pages/dashboards/dashboard.html" class="nav-link">Dashboard</a>
@@ -75,8 +75,70 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> --}}
             <li class="nav-item">
+                <a class="nav-link" href="{{url('dashboard/admin')}}">
+                  <i class="ni ni-shop text-primary"></i>
+                  <span class="nav-link-text">Dashboards</span>
+                </a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#navbar-mhs" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-mhs">
+                  <i class="ni ni-single-02 text-primary"></i>
+                  <span class="nav-link-text">Mahasiswa</span>
+                </a>
+                <div class="collapse" id="navbar-mhs">
+                  <ul class="nav nav-sm flex-column">
+                    <li class="nav-item">
+                      <a href="{{url('dashboard/admin/mahasiswa')}}" class="nav-link">Data Mahasiswa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Data PKL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{url('dashboard/admin/mahasiswa/ta')}}" class="nav-link">Data Skripsi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{url('dashboard/admin/mahasiswa/prestasi')}}" class="nav-link">Data Prestasi</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#navbar-info" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-info">
+                  <i class="fas fa-bullhorn text-orange"></i>
+                  <span class="nav-link-text">Informasi & Berita</span>
+                </a>
+                <div class="collapse" id="navbar-info">
+                  <ul class="nav nav-sm flex-column">
+                    <li class="nav-item">
+                      <a href="{{url('dashboard/admin/pengumuman')}}" class="nav-link">Pengumuman</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{url('dashboard/admin/event')}}" class="nav-link">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{url('dashboard/admin/berita')}}" class="nav-link">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Agenda</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url('dashboard/admin/alumni')}}">
+                  <i class="fas fa-address-card text-green"></i>
+                  <span class="nav-link-text">Alumni</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-users text-red"></i>
+                  <span class="nav-link-text">Ormawa</span>
+                </a>
+              </li>
+            {{-- <li class="nav-item">
               <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                 <i class="ni ni-ungroup text-orange"></i>
                 <span class="nav-link-text">Examples</span>
@@ -219,9 +281,9 @@
                 <i class="ni ni-calendar-grid-58 text-red"></i>
                 <span class="nav-link-text">Calendar</span>
               </a>
-            </li>
+            </li> --}}
           </ul>
-          <!-- Divider -->
+          {{-- <!-- Divider -->
           <hr class="my-3">
           <!-- Heading -->
           <h6 class="navbar-heading p-0 text-muted">Documentation</h6>
@@ -251,7 +313,7 @@
                 <span class="nav-link-text">Plugins</span>
               </a>
             </li>
-          </ul>
+          </ul> --}}
         </div>
       </div>
     </div>
@@ -295,10 +357,10 @@
               <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="media align-items-center">
                   <span class="avatar avatar-sm rounded-circle">
-                    <img alt="Image placeholder" src="../../assets/img/theme/team-4.jpg">
+                    <img alt="Image placeholder" src="{{asset('storage/' . Auth::user()->avatar)}}">
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                    <span class="mb-0 text-sm  font-weight-bold">{{ Auth::user()->username }}</span>
                   </div>
                 </div>
               </a>
@@ -323,7 +385,18 @@
                   <span>Support</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#!" class="dropdown-item">
+                <a  class="dropdown-item" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
+
+
+                                <form
+                                    id="logout-form"
+                                    action="{{ route('logout') }}"
+                                    method="POST"
+                                    style="display: none;">
+                                    @csrf
+                                </form>
                   <i class="ni ni-user-run"></i>
                   <span>Logout</span>
                 </a>
