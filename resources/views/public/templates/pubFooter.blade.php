@@ -1,8 +1,8 @@
   
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-sm twitter-feed">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3">
+        <div class="col twitter-feed">
           <h3>Umpan Twitter</h3>
           <div class="tweet-content">
             <div class="tweet-item row">
@@ -33,7 +33,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm">
+        <div class="col">
           <h3>Form Kontak</h3>
           <form action="">
             <input type="text" 
@@ -46,7 +46,7 @@
             <button type="submit">Kirim</button>
           </form>
         </div>
-        <div class="col-sm">
+        <div class="col">
           <h3>Tentang Kami</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, et quae numquam error natus ipsum libero. Perspiciatis, minus in impedit nihil officia ratione ab quasi molestiae voluptas sed similique officiis.

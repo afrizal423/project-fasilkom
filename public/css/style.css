@@ -143,6 +143,7 @@ header {
 }
 
 #berita {
+  margin-top: 60px;
   padding-bottom: 70px;
 }
 
@@ -152,18 +153,14 @@ header {
 }
 
 .berita-item {
-  width: 23%;
-  margin: 2%;
-  height: 300px;
-  margin: 10px;
-  background-color: black;
+  height: 350px;
   border: 1px solid white;
 }
-.berita-item:first-of-type {
-  margin-left: 0;
-}
-.berita-item:nth-child(5) {
-  margin-left: 0;
+
+.berita-item-content {
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
 
 footer > div > .row:first-of-type {
@@ -174,9 +171,6 @@ footer {
   background-color: #111;
   box-sizing: border-box;
   height: auto;
-}
-footer hr {
-  background-color: #555;
 }
 footer > div {
   margin-top: 30px;
@@ -190,11 +184,16 @@ footer::before {
 }
 
 footer .row:first-of-type > div {
-  height: 300px;
-  margin: 10px;
-  padding: 20px 0 0;
+  height: auto;
   border-top: 2px solid #999;
   color: white;
+}
+footer .row:first-of-type > div > h3 {
+  font-family: sans-serif;
+  font-size: 110%;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 footer .row:first-of-type > div:last-child p {
   font-family: sans-serif;
@@ -204,13 +203,6 @@ footer .row:first-of-type > div:last-child p {
 }
 footer .row:first-of-type > div:last-child span {
   color: white;
-}
-footer .row:first-of-type > div h3 {
-  font-family: sans-serif;
-  font-size: 110%;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
 }
 
 footer form {
@@ -278,7 +270,7 @@ footer form button {
     font-size: 90%;
   }
 
-  #pengumuman-header h2 {
+  #pengumuman-header h2, #berita h2 {
     text-align: center;
   }
 
@@ -318,7 +310,7 @@ footer form button {
   }
 }
 @media screen and (min-width: 992px) {
-  #pengumuman h2 {
+  #pengumuman h2, #berita h2 {
     text-align: start;
     font-size: 200%;
   }

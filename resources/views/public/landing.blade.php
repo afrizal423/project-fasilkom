@@ -4,7 +4,9 @@
     <section id="pengumuman" class="">
       <div class="container">
         <div id="pengumuman-header" class="row">
-          <h2 class="col-sm-12 col-md-12 col-lg-9">Pengumuman</h2>
+          <h2 class="col-sm-12 col-md-12 col-lg-9">
+            <strong>Pengumuman</strong>
+          </h2>
           <nav aria-label="Pengumuman navigation" id="nav-pagination" class="col-sm-5 col-lg-3">
             <ul class="pagination justify-content-xl-end">
               <li class="page-item"><a href="#" class="page-link">Selengkapnya</a></li>
@@ -37,7 +39,7 @@
             </li>
             <li>
               <a href="">
-                <i class="fa fa-bullhorn"></i>[26 Sep 2019] <strong>Beasiswa Unggulan Bank Indonesia</strong>
+                <i class="fa fa-bullhorn"></i> [26 Sep 2019] <strong>Beasiswa Unggulan Bank Indonesia</strong>
               </a>
             </li>
           </ul>
@@ -146,16 +148,51 @@
 
     <section id="berita" class="container-fluid">
       <div id="berita-content" class="container">
-        <h2>Berita</h2>
-        <div>
-          <div class="berita-item"></div>
-          <div class="berita-item"></div>
-          <div class="berita-item"></div>
-          <div class="berita-item"></div>
-          <div class="berita-item"></div>
-          <div class="berita-item"></div>
-          <div class="berita-item"></div>
-          <div class="berita-item"></div>
+        <h2><strong>Berita Terbaru</strong></h2>
+        <div class="row no-gutters row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+          <div class="berita-item col p-1 p-md-2">
+            <div class="berita-item-content">
+              
+            </div>
+          </div>
+          <div class="berita-item col p-1 p-md-2">
+            <div class="berita-item-content">
+
+            </div>
+          </div>
+          <div class="berita-item col p-1 p-md-2">
+            <div class="berita-item-content">
+
+            </div>
+          </div>
+          <div class="berita-item col p-1 p-md-2">
+            <div class="berita-item-content">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 d-none d-lg-flex">
+          <div class="berita-item col p-1 p-md-2">
+            <div class="berita-item-content">
+              
+            </div>
+          </div>
+          <div class="berita-item col p-1 p-md-2">
+            <div class="berita-item-content">
+
+            </div>
+          </div>
+          <div class="berita-item col p-1 p-md-2">
+            <div class="berita-item-content">
+
+            </div>
+          </div>
+          <div class="berita-item col p-1 p-md-2">
+            <div class="berita-item-content">
+
+            </div>
+          </div>
         </div>
       </div>
     </section>
