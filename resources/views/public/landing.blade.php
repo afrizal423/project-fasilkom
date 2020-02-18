@@ -4,9 +4,9 @@
     <section id="pengumuman" class="">
       <div class="container">
         <div id="pengumuman-header" class="row">
-          <h2 class="col-9">Pengumuman</h2>
-          <nav aria-label="Pengumuman navigation" id="nav-pagination">
-            <ul class="pagination">
+          <h2 class="col-sm-12 col-md-12 col-lg-9">Pengumuman</h2>
+          <nav aria-label="Pengumuman navigation" id="nav-pagination" class="col-sm-5 col-lg-3">
+            <ul class="pagination justify-content-xl-end">
               <li class="page-item"><a href="#" class="page-link">Selengkapnya</a></li>
               <li class="page-item"><a href="#" class="page-link"><</a></li>
               <li class="page-item"><a href="#" class="page-link">></a></li>
@@ -73,7 +73,7 @@
       </div>
     </section>
 
-    <section id="events" class="container-fluid">
+    {{-- <section id="events" class="container-fluid">
       <div id="events-content" class="container">
         <h2>Events</h2>
         <div class="event-item row">
@@ -142,7 +142,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
     <section id="berita" class="container-fluid">
       <div id="berita-content" class="container">

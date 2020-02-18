@@ -2,8 +2,36 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-sm">
+        <div class="col-sm twitter-feed">
           <h3>Umpan Twitter</h3>
+          <div class="tweet-content">
+            <div class="tweet-item row">
+              <i class="fab fa-twitter col-md-1"></i>
+              <p class="col">
+                The moment an unlimited #antares rocked exploded seconds after launch http://example.com.
+                <br>
+                <span>15 minutes ago</span>
+              </p>
+            </div>
+  
+            <div class="tweet-item row">
+              <i class="fab fa-twitter col-md-1"></i>
+              <p class="col">
+                @NASA & @Orbital Science gathering data on failure #antares rocket bound for international space.
+                <br>
+                <span>45 minutes ago</span>
+              </p>
+            </div>
+  
+            <div class="tweet-item row">
+              <i class="fab fa-twitter col-md-1"></i>
+              <p class="col">
+                Ex-cabinet minister Chris Huhne loses legal challenge over $77,750 court costs incurred in speeding points.
+                <br>
+                <span>1 day ago</span>
+              </p>
+            </div>
+          </div>
         </div>
         <div class="col-sm">
           <h3>Form Kontak</h3>
@@ -20,7 +48,20 @@
         </div>
         <div class="col-sm">
           <h3>Tentang Kami</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, et quae numquam error natus ipsum libero. Perspiciatis, minus in impedit nihil officia ratione ab quasi molestiae voluptas sed similique officiis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, et quae numquam error natus ipsum libero. Perspiciatis, minus in impedit nihil officia ratione ab quasi molestiae voluptas sed similique officiis.
+            <br>
+            <br>
+            <span id="fasdev">- Fasilkom Dev Team</span>
+          </p>
         </div>
+      </div>
+
+      <div class="copyright row">
+        <h4 class="col">
+          &copy; 2020 Dev Team Fakultas Ilmu Komputer UPN Jatim
+        </h4>
       </div>
     </div>
   </footer>

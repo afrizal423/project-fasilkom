@@ -166,11 +166,17 @@ header {
   margin-left: 0;
 }
 
+footer > div > .row:first-of-type {
+  margin-bottom: 60px;
+}
+
 footer {
   background-color: #111;
   box-sizing: border-box;
   height: auto;
-  padding-bottom: 30px;
+}
+footer hr {
+  background-color: #555;
 }
 footer > div {
   margin-top: 30px;
@@ -183,18 +189,28 @@ footer::before {
   background-color: #333;
 }
 
-footer .row > div {
+footer .row:first-of-type > div {
   height: 300px;
   margin: 10px;
   padding: 20px 0 0;
   border-top: 2px solid #999;
   color: white;
 }
-footer .row > div h3 {
-  font-family: "Roboto Mono";
+footer .row:first-of-type > div:last-child p {
+  font-family: sans-serif;
+  font-size: 75%;
+  color: #999;
+  font-weight: lighter;
+}
+footer .row:first-of-type > div:last-child span {
+  color: white;
+}
+footer .row:first-of-type > div h3 {
+  font-family: sans-serif;
   font-size: 110%;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 footer form {
@@ -224,62 +240,116 @@ footer form button {
   padding: 5px 20px;
 }
 
-@media screen and (max-width: 1024px) {
-  body {
-    font-size: 90%;
-  }
+.copyright {
+  border-top: 0.5px solid #555;
+  padding: 20px 0;
+  color: white;
 }
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 110%;
-  }
+.copyright h4 {
+  font-size: 85%;
+}
 
-  .navbar ul li {
+.twitter-feed .tweet-content {
+  width: 98%;
+}
+.twitter-feed .fa-twitter {
+  color: #999;
+  display: inline;
+  font-size: 150%;
+  text-align: center;
+}
+.twitter-feed .tweet-item {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 80%;
+}
+.twitter-feed .tweet-item span {
+  color: #999;
+}
+
+@media screen and (min-width: 320px) {
+  .navbar {
     text-align: end;
   }
-  .navbar ul li a {
-    font-size: 120%;
-  }
 
-  #pengumuman ul li {
-    margin-bottom: 15px;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  body {
-    font-size: 110%;
-  }
-
-  #pengumuman {
-    padding: 30px 90px 0;
-  }
-}
-@media screen and (max-width: 425px) {
   #pengumuman {
     position: relative;
-    padding: 30px 40px 60px;
+    padding: 15px 8px 40px;
+    font-size: 90%;
   }
-  #pengumuman #pengumuman-item > ul:last-of-type {
+
+  #pengumuman-header h2 {
+    text-align: center;
+  }
+
+  #pengumuman-item li {
+    margin-bottom: 15px;
+  }
+
+  #pengumuman-item > ul:last-of-type {
     display: none;
   }
-  #pengumuman #nav-pagination {
+
+  #nav-pagination {
     position: absolute;
+    width: unset;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   #pengumuman {
-    padding: 30px 30px 60px;
-  }
-  #pengumuman h2 {
-    text-align: center;
+    font-size: 105%;
   }
 }
-@media screen and (max-width: 320px) {
-  #pengumuman {
+@media screen and (min-width: 768px) {
+  #pengumuman li {
+    font-size: 80%;
+  }
+
+  #pengumuman-item > ul:last-child {
+    display: block;
+  }
+}
+@media screen and (min-width: 800px) {
+  #pengumuman li {
     font-size: 90%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #pengumuman h2 {
+    text-align: start;
+    font-size: 200%;
+  }
+}
+@media screen and (min-width: 1008px) {
+  #pengumuman {
+    padding: 15px 8px 0;
+  }
+
+  #pengumuman li {
+    font-size: 100%;
+  }
+
+  #pengumuman h2 {
+    text-align: start;
+    font-size: 250%;
+  }
+
+  #nav-pagination {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: unset;
+    left: unset;
+    transform: unset;
+  }
+}
+@media screen and (min-width: 1204px) {
+  #pengumuman li {
+    font-size: 100%;
   }
 }
 
