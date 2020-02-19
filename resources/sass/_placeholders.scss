@@ -1,18 +1,19 @@
 %form-style {
+  display: block;
+  width: 90%;
   background-color: black;
-  border-radius: 7px;
   border: 1px solid #999;
-  color: #fff;
-  font-size: 70%;
-  letter-spacing: 2px;
-  font-family: 'Roboto Mono';
+  border-radius: 8px;
   margin-bottom: 10px;
-  width: 100%;
-}
+  padding: 5px 10px;
+  font-size: 90%;
 
-%form-focus {
-  background-color: black;
-  box-shadow: none;
-  border: 1.5px solid #fff;
-}
+  &:focus {
+    border: 1px solid white;
+    color: white;
 
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}

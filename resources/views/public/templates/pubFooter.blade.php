@@ -2,59 +2,40 @@
   <footer>
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3">
-        <div class="col twitter-feed">
-          <h3>Umpan Twitter</h3>
-          <div class="tweet-content">
-            <div class="tweet-item row">
-              <i class="fab fa-twitter col-md-1"></i>
-              <p class="col">
-                The moment an unlimited #antares rocked exploded seconds after launch http://example.com.
-                <br>
-                <span>15 minutes ago</span>
-              </p>
-            </div>
-  
-            <div class="tweet-item row">
-              <i class="fab fa-twitter col-md-1"></i>
-              <p class="col">
-                @NASA & @Orbital Science gathering data on failure #antares rocket bound for international space.
-                <br>
-                <span>45 minutes ago</span>
-              </p>
-            </div>
-  
-            <div class="tweet-item row">
-              <i class="fab fa-twitter col-md-1"></i>
-              <p class="col">
-                Ex-cabinet minister Chris Huhne loses legal challenge over $77,750 court costs incurred in speeding points.
-                <br>
-                <span>1 day ago</span>
-              </p>
-            </div>
+        <div class="col px-3 mb-4 mb-sm-4 mb-md-0">
+          <div class="footer-col-content pt-3">
+            <h3>Umpan Twitter</h3>
+            <a class="twitter-timeline" 
+                data-height="300" 
+                data-theme="light" 
+                href="https://twitter.com/upnveteranjatim?ref_src=twsrc%5Etfw">
+              Tweets by upnveteranjatim
+            </a> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div>
-        <div class="col">
-          <h3>Form Kontak</h3>
-          <form action="">
-            <input type="text" 
-                  placeholder="Masukkan nama lengkap">
-            <input type="text" 
-                  placeholder="Masukkan alamat email">
-            <textarea name="pesan" 
-                      id="pesanEmail"
-                      placeholder="Ketikkan pesan anda disini"></textarea>
-            <button type="submit">Kirim</button>
-          </form>
+        <div class="col px-3 mb-4 mb-sm-4 mb-md-0">
+          <div class="footer-col-content pt-3">
+            <h3>Form Kontak</h3>
+            <form action="" class="footer-form">
+              <input type="text" placeholder="Nama Lengkap Anda">
+              <input type="text" placeholder="Email Anda">
+              <textarea name="footer-message" id="footer-message" class="d-block" placeholder="Pesan anda"></textarea>
+              <button type="submit">Kirim</button>
+            </form>
+          </div>
         </div>
-        <div class="col">
-          <h3>Tentang Kami</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, et quae numquam error natus ipsum libero. Perspiciatis, minus in impedit nihil officia ratione ab quasi molestiae voluptas sed similique officiis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, et quae numquam error natus ipsum libero. Perspiciatis, minus in impedit nihil officia ratione ab quasi molestiae voluptas sed similique officiis.
-            <br>
-            <br>
-            <span id="fasdev">- Fasilkom Dev Team</span>
-          </p>
+        <div class="col px-3">
+          <div class="footer-col-content pt-3 tentang-kami">
+            <h3>Tentang Kami</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum illo cumque, delectus voluptatum facilis sapiente quae et porro nam dicta nostrum. Minus laborum blanditiis adipisci praesentium voluptates non facilis deserunt!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum illo cumque, delectus voluptatum facilis sapiente quae et porro nam dicta nostrum. Minus laborum blanditiis adipisci praesentium voluptates non facilis deserunt!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum illo cumque, delectus voluptatum facilis sapiente quae et porro nam dicta nostrum. Minus laborum blanditiis adipisci praesentium voluptates non facilis deserunt!
+              <br><br>
+              <span> - Fasilkom DEV Team</span>
+            </p>
+          </div>
         </div>
       </div>
 

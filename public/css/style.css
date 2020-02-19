@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap");
-footer form input, footer form textarea {
+.footer-form textarea, .footer-form input {
+  display: block;
+  width: 90%;
   background-color: black;
-  border-radius: 7px;
   border: 1px solid #999;
-  color: #fff;
-  font-size: 70%;
-  letter-spacing: 2px;
-  font-family: "Roboto Mono";
+  border-radius: 8px;
   margin-bottom: 10px;
-  width: 100%;
+  padding: 5px 10px;
+  font-size: 90%;
 }
-
-footer form input:focus, footer form textarea:focus {
-  background-color: black;
-  box-shadow: none;
-  border: 1.5px solid #fff;
+.footer-form textarea:focus, .footer-form input:focus {
+  border: 1px solid white;
+  color: white;
+}
+.footer-form textarea:focus::placeholder, .footer-form input:focus::placeholder {
+  color: transparent;
 }
 
 .container-fluid {
@@ -163,10 +163,6 @@ header {
   background-color: black;
 }
 
-footer > div > .row:first-of-type {
-  margin-bottom: 60px;
-}
-
 footer {
   background-color: #111;
   box-sizing: border-box;
@@ -174,6 +170,9 @@ footer {
 }
 footer > div {
   margin-top: 30px;
+}
+footer > div > .row:first-of-type {
+  margin-bottom: 60px;
 }
 footer::before {
   content: "";
@@ -183,53 +182,44 @@ footer::before {
   background-color: #333;
 }
 
-footer .row:first-of-type > div {
-  height: auto;
-  border-top: 2px solid #999;
-  color: white;
+.footer-form textarea {
+  height: 150px;
+  resize: vertical;
 }
-footer .row:first-of-type > div > h3 {
+.footer-form button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 13px;
+  border-radius: 8px;
+}
+
+footer .row:first-of-type > .col > .footer-col-content > h3 {
   font-family: sans-serif;
   font-size: 110%;
   letter-spacing: 1px;
-  margin-bottom: 30px;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  color: white;
 }
-footer .row:first-of-type > div:last-child p {
+footer .row:first-of-type > .col > .footer-col-content:last-child p {
   font-family: sans-serif;
   font-size: 75%;
   color: #999;
   font-weight: lighter;
 }
-footer .row:first-of-type > div:last-child span {
+footer .row:first-of-type > .col > .footer-col-content:last-child span {
   color: white;
 }
 
-footer form {
-  width: 90%;
+.footer-col-content {
+  height: 100%;
+  border-top: 2px solid #999;
 }
-footer form textarea {
-  resize: none;
-  overflow: auto;
-  height: 100px;
-  padding: 10px 0 0 15px;
-  margin-bottom: 5px;
-}
-footer form textarea:focus::placeholder {
-  color: transparent;
-}
-footer form input {
-  padding: 10px 0 10px 15px;
-}
-footer form input:focus::placeholder {
-  color: transparent;
-}
-footer form button {
-  background-color: #fff;
-  border: 1px solid #333;
-  border-radius: 8px;
-  color: black;
-  padding: 5px 20px;
+.footer-col-content > h3 {
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-size: 140%;
+  text-transform: uppercase;
 }
 
 .copyright {
@@ -239,24 +229,6 @@ footer form button {
 }
 .copyright h4 {
   font-size: 85%;
-}
-
-.twitter-feed .tweet-content {
-  width: 98%;
-}
-.twitter-feed .fa-twitter {
-  color: #999;
-  display: inline;
-  font-size: 150%;
-  text-align: center;
-}
-.twitter-feed .tweet-item {
-  font-family: sans-serif;
-  font-weight: lighter;
-  font-size: 80%;
-}
-.twitter-feed .tweet-item span {
-  color: #999;
 }
 
 @media screen and (min-width: 320px) {

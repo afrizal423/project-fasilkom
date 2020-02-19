@@ -178,12 +178,6 @@ header {
   background-color: black;
 }
 
-footer > div {
-  & > .row:first-of-type {
-    margin-bottom: 60px;
-  }
-}
-
 footer {
   background-color: #111;
   box-sizing: border-box;
@@ -191,6 +185,10 @@ footer {
 
   & > div {
     margin-top: 30px;
+
+    & > .row:first-of-type {
+      margin-bottom: 60px;
+    }
   }
 
   &::before {
@@ -202,17 +200,36 @@ footer {
   }
 }
 
-footer .row:first-of-type > div {
-  height: auto;
-  border-top: 2px solid #999;
-  color: white;
+.footer-form {
+
+  input {
+    @extend %form-style;
+  }
+
+  textarea {
+    @extend %form-style;
+
+    height: 150px;
+    resize: vertical;
+  }
+
+  button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 13px;
+    border-radius: 8px;
+  }
+}
+
+footer .row:first-of-type > .col > .footer-col-content {
 
   & > h3 {
     font-family: sans-serif;
     font-size: 110%;
     letter-spacing: 1px;
-    margin-bottom: 30px;
     text-transform: uppercase;
+    margin-bottom: 10px;
+    color: white;
   }
 
   &:last-child {
@@ -229,45 +246,15 @@ footer .row:first-of-type > div {
   }
 }
 
-footer form {
-  width: 90%;
+.footer-col-content {
+  height: 100%;
+  border-top: 2px solid #999;
 
-  textarea {
-    @extend %form-style;
-    resize: none;
-    overflow: auto;
-    height: 100px;
-    padding: 10px 0 0 15px;
-    margin-bottom: 5px;
-
-    &:focus {
-      @extend %form-focus;
-
-      &::placeholder {
-        color: transparent;
-      }
-    }
-  }
-
-  input {
-    @extend %form-style;
-    padding: 10px 0 10px 15px;
-
-    &:focus {
-      @extend %form-focus;
-
-      &::placeholder {
-        color: transparent;
-      }
-    }
-  }
-
-  button {
-    background-color: #fff;
-    border: 1px solid #333;
-    border-radius: 8px;
-    color: black;
-    padding: 5px 20px;
+  & > h3 {
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-size: 140%;
+    text-transform: uppercase;
   }
 }
 
@@ -278,30 +265,6 @@ footer form {
   color: white;
   h4 {
     font-size: 85%;
-  }
-}
-
-.twitter-feed {
-
-  .tweet-content {
-    width: 98%;
-  }
-
-  .fa-twitter {
-    color: #999;
-    display: inline;
-    font-size: 150%;
-    text-align: center;
-  }
-
-  .tweet-item {
-    font-family: sans-serif;
-    font-weight: lighter;
-    font-size: 80%;
-
-    span {
-      color: #999;
-    }
   }
 }
 
