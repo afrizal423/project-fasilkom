@@ -12,6 +12,10 @@ header {
   overflow: hidden;
 }
 
+p {
+  margin: 0;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, .7);
 
@@ -154,6 +158,23 @@ header {
       border-top: 1px solid white;
     }
   }
+}
+
+.event-preview {
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  a {
+    display: block;
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+  }
+
 }
 
 .event-img {

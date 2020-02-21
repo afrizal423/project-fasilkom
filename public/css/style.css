@@ -28,6 +28,10 @@ header {
   overflow: hidden;
 }
 
+p {
+  margin: 0;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -140,6 +144,18 @@ header {
   margin-top: 10px;
   padding-top: 10px;
   border-top: 1px solid white;
+}
+
+.event-preview p {
+  margin-bottom: 5px;
+}
+.event-preview a {
+  display: block;
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
 }
 
 .event-img a {
@@ -353,7 +369,7 @@ footer .row:first-of-type > .col > .footer-col-content:last-child span {
     font-size: 105%;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .event-date {
     padding-top: 0;
     font-size: 80%;
