@@ -118,6 +118,16 @@
   }
 }
 
+@media screen and (max-width: 767px){
+  .event-date {
+    padding-top: 0;
+    font-size: 80%;
+    span:last-of-type {
+      line-height: 2px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px){
   #pengumuman li {
     font-size: 80%;
