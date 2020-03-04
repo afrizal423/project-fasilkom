@@ -25,21 +25,22 @@
         <a href="#" class="navbar-brand">
           <img src="{{ asset('images/logo2.png') }}" alt="Logo UPN 'Veteran Jawa Timur'">
         </a>
-        
-        <button type="button" 
-                class="navbar-toggler" 
-                data-toggle="collapse" 
-                data-target="#navbarNavCollapse" aria-controls="navbarNavCollapse" 
-                aria-expanded="false" 
+
+        <button type="button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#navbarNavCollapse" aria-controls="navbarNavCollapse"
+                aria-expanded="false"
                 aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
-  
+
         <div class="collapse navbar-collapse" id="navbarNavCollapse">
           <ul class="navbar-nav ml-auto" id="navbarCollapse">
             <li class="nav-item">
               <a href="index.html" class="nav-link active">Beranda</a>
             </li>
+
             <li class="nav-item dropdown">
               <a href="#" id="navbarDropdown"
                   class="nav-link dropdown-toggle"
@@ -87,6 +88,11 @@
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Kontak Kami</a>
             </li>
+            @if (Route::has('login'))
+            <li class="nav-item">
+                <a href="{{ url('/dashboard/admin') }}" class="text-warning nav-link">Admin Area</a>
+              </li>
+             @endif
           </ul>
         </div>
       </div>
