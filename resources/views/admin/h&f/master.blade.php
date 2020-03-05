@@ -33,6 +33,9 @@
             rel="stylesheet"
             href="<?php echo asset('assets/css/argon.css?v=1.1.0')?>"
             type="text/css">
+            <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
         @yield('header')
     </head>
     <body>
