@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('public/landing');
+  return view('public/landing');
+});
+
+Route::get('/prestasi', function() {
+  return view('public/prestasi');
 });
 Route::group(['middleware' => ['web']], function () {
     Auth::routes();
