@@ -114,13 +114,13 @@
                 </a>
                 <div class="collapse" id="navbar-info">
                   <ul class="nav nav-sm flex-column">
-                    <li class="nav-item">
+                    <li class="nav-item {{ (request()->is('dashboard/admin/pengumuman')) ? 'active' : '' }}">
                       <a href="{{url('dashboard/admin/pengumuman')}}" class="nav-link">Pengumuman</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{url('dashboard/admin/event')}}" class="nav-link">Event</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ (request()->is('dashboard/admin/berita')) ? 'active' : '' }}">
                         <a href="{{url('dashboard/admin/berita')}}" class="nav-link">Berita</a>
                     </li>
                     <li class="nav-item">

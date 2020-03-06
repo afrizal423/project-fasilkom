@@ -1,7 +1,6 @@
-@extends('admin.h&f.master')@section('judul_halaman', 'Tambah Berita')
+@extends('admin.h&f.master')@section('judul_halaman', 'Tambah Pengumuman')
 @section('header')
 <!-- Page plugins -->
-
 <link href = "https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel = "stylesheet" /> <link
     rel="stylesheet"
     href="<?php echo asset('assets/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css')?>">
@@ -18,7 +17,7 @@
                     <div class="header-body">
                         <div class="row align-items-center py-4">
                             <div class="col-lg-6 col-7">
-                                <h6 class="h2 text-white d-inline-block mb-0">Tambah Berita</h6>
+                                <h6 class="h2 text-white d-inline-block mb-0">Tambah Pengumuman</h6>
                                 <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                                     <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                                         <li class="breadcrumb-item">
@@ -27,17 +26,17 @@
                                             </a>
                                         </li>
                                         <li class="breadcrumb-item">
-                                            <a href="{{ url('/dashboard/admin/berita') }}">
-                                                Berita
+                                            <a href="{{ url('/dashboard/admin/pengumuman') }}">
+                                                Pengumuman
                                             </a>
                                         </li>
-                                        <li class="breadcrumb-item active" aria-current="page">Tambah Berita</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Tambah Pengumuman</li>
                                     </ol>
                                 </nav>
                             </div>
                             <div class="col-lg-6 col-5 text-right">
-                                {{-- <a href="#" class="btn btn-sm btn-neutral">Tambah Berita</a> --}}
-                                <a href="#" class="btn btn-sm btn-neutral">Kelola Berita</a>
+                                {{-- <a href="#" class="btn btn-sm btn-neutral">Tambah Pengumuman</a> --}}
+                                <a href="#" class="btn btn-sm btn-neutral">Kelola Pengumuman</a>
                             </div>
                         </div>
                     </div>
@@ -52,19 +51,26 @@
 
                                 <!-- Card header -->
                                 <div class="card-header">
-                                    <h3 class="mb-0">Tambah Berita</h3>
+                                    <h3 class="mb-0">Tambah Pengumuman</h3>
                                 </div>
                                 <!-- Card body -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Judul Berita</label>
+                                        <label for="exampleInputEmail1">Judul Pengumuman</label>
                                         <input type="text" class="form-control" id="exampleInputEmail1"></div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Konten Berita</label>
+                                            <label for="exampleInputEmail1">Konten Pengumuman</label>
                                             <textarea name="konten" class="form-control my-editor"></textarea>
                                             {{-- <input type="text" class="form-control" id="exampleInputEmail1"> --}}
                                         </div>
-
+                                        <label class="form-control-label" for="exampleFormControlSelect1">Kategori Pengumuman</label>
+                                        <select class="form-control" id="exampleFormControlSelect1" name="kategori">
+                                            <option>PKM</option>
+                                            <option>Lowongan</option>
+                                            <option>Kewirausahaan</option>
+                                            <option>Beasiswa</option>
+                                            <option>Sertifikasi</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -108,12 +114,11 @@
                                             <!-- Card body -->
                                             <div class="card-body">
                                                 {{-- <form> --}}
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        {{-- value="Bucharest, Cluj, Iasi, Timisoara, Piatra Neamt" --}}
-                                                        data-toggle="tags"/>
-                                                {{-- </form> --}}
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    {{-- value="Bucharest, Cluj, Iasi, Timisoara, Piatra Neamt" --}}
+                                                    data-toggle="tags"/> {{-- </form> --}}
                                             </div>
                                         </div>
                                         <!-- Aksi -->
@@ -163,6 +168,8 @@
                                     <script
                                         src="../../assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
                                     <script src="<?php echo asset('assets/js/demo.min.js')?>"></script>
+                                    <script src="<?php echo asset('assets/js/argon.js?v=1.1.0')?>"></script>
+
                                     <script
                                         src="<?php echo asset('assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js')?>"></script>
 

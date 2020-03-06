@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
   </head>
 
-        
+
 <body class="container-fluid">
 
   <header>
@@ -38,16 +38,16 @@
         <a href="#" class="navbar-brand">
           <img src="{{ asset('images/logo2.png') }}" alt="Logo UPN 'Veteran Jawa Timur'">
         </a>
-        
-        <button type="button" 
-                class="navbar-toggler" 
-                data-toggle="collapse" 
-                data-target="#navbarNavCollapse" aria-controls="navbarNavCollapse" 
-                aria-expanded="false" 
+
+        <button type="button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#navbarNavCollapse" aria-controls="navbarNavCollapse"
+                aria-expanded="false"
                 aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
-  
+
         <div class="collapse navbar-collapse" id="navbarNavCollapse">
           <ul class="navbar-nav ml-auto" id="navbarCollapse">
             <li class="nav-item">
@@ -92,7 +92,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="/prestasi" class="nav-link active">Prestasi</a>
+              <a href="/prestasi" class="nav-link {{ (request()->is('prestasi')) ? 'active' : '' }}">Prestasi</a>
             </li>
             <li class="nav-item">
               <a href="http://ikatifa.org" class="nav-link">Alumni</a>

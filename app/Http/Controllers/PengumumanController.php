@@ -12,8 +12,13 @@ class PengumumanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
+        return view('admin.pengumuman.index');
         //
     }
 
@@ -24,7 +29,8 @@ class PengumumanController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pengumuman.create');
+
     }
 
     /**
