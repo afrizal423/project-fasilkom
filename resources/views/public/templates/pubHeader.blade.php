@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fakultas Ilmu Komputer | UPN "Veteran" Jawa Timur</title>
+    <title>{{$title}} | FIK - UPN "Veteran" Jawa Timur</title>
 
     <!-- Bootstrap.css CDN -->
     <link
@@ -32,7 +32,7 @@
 
 <body class="container-fluid">
 
-  <header>
+  <header @if(Request::is('/')) class="vh-100" @else class="bg-dark" @endif >
     <nav class="navbar navbar-expand-lg container-fluid">
       <div class="container">
         <a href="#" class="navbar-brand">
@@ -51,7 +51,7 @@
         <div class="collapse navbar-collapse" id="navbarNavCollapse">
           <ul class="navbar-nav ml-auto" id="navbarCollapse">
             <li class="nav-item">
-              <a href="index.html" class="nav-link">Beranda</a>
+              <a href="index.html" class="nav-link active">Beranda</a>
             </li>
             <li class="nav-item dropdown">
               <a href="#" id="navbarDropdown"
@@ -105,8 +105,11 @@
       </div>
     </nav>
 
-    <img
+    @if(Request::is('/'))
+      <img
         src="{{ asset('images/banner2.jpeg') }}"
         alt="Gedung 2 Fakultas Ilmu Komputer"
         class="banner">
+    @endif
+    
   </header>
