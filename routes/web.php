@@ -12,12 +12,17 @@
 */
 
 Route::get('/', function () {
-  return view('public/landing');
+  return view('public/landing', ['title' => 'Beranda']);
 });
 
 Route::get('/prestasi', function() {
-  return view('public/prestasi');
+  return view('public/prestasi', ['title' => 'Prestasi']);
 });
+
+Route::get('/pengumuman', function() {
+  return view('public/pengumuman', ['title' => 'Pengumuman']);
+});
+
 Route::group(['middleware' => ['web']], function () {
     Auth::routes();
     Route::match(['get', 'post'], '/register', function () {
