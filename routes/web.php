@@ -27,6 +27,10 @@ Route::get('/events', function() {
   return view('public/events', ['title' => 'Events']);
 });
 
+Route::get('/single', function() {
+  return view('public/single', ['title' => 'Single']);
+});
+
 Route::group(['middleware' => ['web']], function () {
     Auth::routes();
     Route::match(['get', 'post'], '/register', function () {

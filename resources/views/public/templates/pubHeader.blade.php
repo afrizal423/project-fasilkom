@@ -32,7 +32,7 @@
 
 <body class="container-fluid">
 
-  <header @if(Request::is('/')) class="vh-100" @else class="bg-dark w-auto" @endif >
+  <header @if(Request::is('/')) class="vh-100 overflow-hidden" @else class="bg-dark w-auto" @endif >
     <nav class="navbar navbar-expand-lg container-fluid">
       <div class="container">
         <a href="#" class="navbar-brand">
@@ -106,10 +106,46 @@
     </nav>
 
     @if(Request::is('/'))
-      <img
+      {{-- <img
         src="{{ asset('images/banner2.jpeg') }}"
         alt="Gedung 2 Fakultas Ilmu Komputer"
-        class="banner">
+        class="banner"> --}}
+
+      <div id="banner-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#banner-carousel" data-slide-to="1"></li>
+          <li data-target="#banner-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-img-container">
+              {{-- <img src="{{ asset('images/banner2.jpeg') }}" alt="Gedung 2 Fakultas Ilmu Komputer" class="d-block img-fluid"> --}}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-img-container">
+              {{-- <img src="{{ asset('images/banner2.jpeg') }}" alt="Gedung 2 Fakultas Ilmu Komputer" class="d-block img-fluid"> --}}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-img-container">
+              {{-- <img src="{{ asset('images/banner2.jpeg') }}" alt="Gedung 2 Fakultas Ilmu Komputer" class="d-block img-fluid"> --}}
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#banner-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#banner-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     @endif
     
   </header>
