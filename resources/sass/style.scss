@@ -527,4 +527,139 @@ footer .row:first-of-type > .col > .footer-col-content {
   }
 }
 
+.article-content p {
+  margin-bottom: 20px;
+}
+
+.single-title {
+  margin-bottom: 15px;
+}
+
+.single-img {
+  width: 100%;
+  
+  height: 400px;
+  background: url('/images/25.jpg');
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.single-meta {
+  padding: 7px 10px;
+  border-top: 1px dashed lightgrey;
+  border-bottom: 1px dashed lightgrey;
+  margin-bottom: 20px;
+
+  & > div {
+    display: inline-block;
+    color: grey;
+    margin-right: 10px;
+  }
+
+}
+
+.comment-item {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  padding: 15px 0;
+}
+
+.reply {
+  margin-left: 50px;
+}
+
+.comment-meta {
+  float: right;
+
+  time {
+    color: grey;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: red;
+  }
+}
+
+.leave-comment-form {
+  input {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    padding: 5px 10px;
+    display: block;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 100%;
+    height: 200px;
+    resize: vertical;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 10px 15px;
+    background-color: grey;
+    border: 1px solid grey;
+    color: white;
+    border-radius: 3px;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: black;
+      transition: background-color .2s;
+    }
+  }
+}
+
+@for $count from 6 through 8 {
+  .r-comment-item:nth-of-type(#{$count - 5}) .r-comment-img {
+    background-image: url('/images/#{$count}.jpg');
+    background-size: cover;
+  }
+}
+
+
+
+.recent-comments {
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.r-comment-item {
+  margin-bottom: 15px;
+
+  h4 {
+    font-size: 100%;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 75%;
+  }
+}
+
+.author-img {
+  width: fit-content;
+}
+
+.single-author-info {
+  margin-bottom: 20px;
+}
+
+.comments {
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+
 @import 'media';
