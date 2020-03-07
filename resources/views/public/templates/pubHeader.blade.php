@@ -113,28 +113,23 @@
 
       <div id="banner-carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#banner-carousel" data-slide-to="1"></li>
-          <li data-target="#banner-carousel" data-slide-to="2"></li>
+          @foreach($images as $image)
+            <li data-target="#banner-carousel" data-slide-to="{{ $loop->index }}" @if($loop->first) class="active" @endif></li>  
+          @endforeach
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-img-container">
-              {{-- <img src="{{ asset('images/banner2.jpeg') }}" alt="Gedung 2 Fakultas Ilmu Komputer" class="d-block img-fluid"> --}}
+          @foreach($images as $image)
+            <div class="carousel-item @if($loop->first) active @endif">
+              <div class="carousel-img-container" 
+                    style="background-image: url('/images/{{ $image }}');">
+                @if($loop->first)
+                  <div class="carousel-caption">
+                    <h4><span>Selamat Datang di Website Bidang Kemahasiswaan</span> <br> <span>Fakultas Ilmu Komputer</span> <br> <span>UPN "Veteran" Jawa Timur</span></h4>
+                  </div>
+                @endif
+              </div>
             </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-img-container">
-              {{-- <img src="{{ asset('images/banner2.jpeg') }}" alt="Gedung 2 Fakultas Ilmu Komputer" class="d-block img-fluid"> --}}
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-img-container">
-              {{-- <img src="{{ asset('images/banner2.jpeg') }}" alt="Gedung 2 Fakultas Ilmu Komputer" class="d-block img-fluid"> --}}
-            </div>
-          </div>
+          @endforeach
         </div>
 
         <a class="carousel-control-prev" href="#banner-carousel" role="button" data-slide="prev">

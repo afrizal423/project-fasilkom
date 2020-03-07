@@ -12,7 +12,13 @@
 */
 
 Route::get('/', function () {
-  return view('public/landing', ['title' => 'Beranda']);
+  return view('public/landing', [
+    'title' => 'Beranda',
+    'images' => [
+      'banner2.jpeg',
+      'poster2.jpg'
+    ]
+  ]);
 });
 
 Route::get('/prestasi', function() {
