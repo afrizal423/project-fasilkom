@@ -23,6 +23,10 @@ Route::get('/pengumuman', function() {
   return view('public/pengumuman', ['title' => 'Pengumuman']);
 });
 
+Route::get('/events', function() {
+  return view('public/events', ['title' => 'Events']);
+});
+
 Route::group(['middleware' => ['web']], function () {
     Auth::routes();
     Route::match(['get', 'post'], '/register', function () {

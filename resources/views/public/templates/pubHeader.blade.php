@@ -51,7 +51,7 @@
         <div class="collapse navbar-collapse" id="navbarNavCollapse">
           <ul class="navbar-nav ml-auto" id="navbarCollapse">
             <li class="nav-item">
-              <a href="index.html" class="nav-link active">Beranda</a>
+              <a href="/" class="nav-link {{ (request()->is('/')) ? 'active' : '' }}">Beranda</a>
             </li>
             <li class="nav-item dropdown">
               <a href="#" id="navbarDropdown"
