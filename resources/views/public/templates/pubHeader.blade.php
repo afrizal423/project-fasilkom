@@ -32,7 +32,7 @@
 
 <body class="container-fluid">
 
-  <header @if(Request::is('/')) class="vh-100" @else class="bg-dark" @endif >
+  <header @if(Request::is('/')) class="vh-100" @else class="bg-dark w-auto" @endif >
     <nav class="navbar navbar-expand-lg container-fluid">
       <div class="container">
         <a href="#" class="navbar-brand">
