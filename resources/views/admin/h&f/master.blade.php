@@ -93,7 +93,7 @@
                 <div class="collapse" id="navbar-mhs">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a href="{{url('dashboard/admin/mahasiswa')}}" class="nav-link">Data Mahasiswa</a>
+                      <a href="{{url('dashboard/admin/mahasiswa/datamhs')}}" class="nav-link">Data Mahasiswa</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Data PKL</a>
@@ -114,14 +114,14 @@
                 </a>
                 <div class="collapse" id="navbar-info">
                   <ul class="nav nav-sm flex-column">
-                    <li class="nav-item {{ (request()->is('dashboard/admin/pengumuman')) ? 'active' : '' }}">
-                      <a href="{{url('dashboard/admin/pengumuman')}}" class="nav-link">Pengumuman</a>
+                    <li class="nav-item {{ (request()->is('dashboard/admin/news/pengumuman')) ? 'active' : '' }}">
+                      <a href="{{url('dashboard/admin/news/pengumuman')}}" class="nav-link">Pengumuman</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{url('dashboard/admin/event')}}" class="nav-link">Event</a>
+                        <a href="{{url('dashboard/admin/news/event')}}" class="nav-link">Event</a>
                     </li>
-                    <li class="nav-item {{ (request()->is('dashboard/admin/berita')) ? 'active' : '' }}">
-                        <a href="{{url('dashboard/admin/berita')}}" class="nav-link">Berita</a>
+                    <li class="nav-item {{ (request()->is('dashboard/admin/news/berita')) ? 'active' : '' }}">
+                        <a href="{{url('dashboard/admin/news/berita')}}" class="nav-link">Berita</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Agenda</a>

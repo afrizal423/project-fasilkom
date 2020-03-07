@@ -26,7 +26,7 @@
                                             </a>
                                         </li>
                                         <li class="breadcrumb-item">
-                                            <a href="{{ url('/dashboard/admin/pengumuman') }}">
+                                            <a href="{{ url('/dashboard/admin/news/pengumuman') }}">
                                                 Pengumuman
                                             </a>
                                         </li>

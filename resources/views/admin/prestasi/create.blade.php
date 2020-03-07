@@ -1,4 +1,4 @@
-@extends('admin.h&f.master')@section('judul_halaman', 'Tambah Berita')
+@extends('admin.h&f.master')@section('judul_halaman', 'Tambah Prestasi')
 @section('header')
 <!-- Page plugins -->
 
@@ -18,7 +18,7 @@
                     <div class="header-body">
                         <div class="row align-items-center py-4">
                             <div class="col-lg-6 col-7">
-                                <h6 class="h2 text-white d-inline-block mb-0">Tambah Berita</h6>
+                                <h6 class="h2 text-white d-inline-block mb-0">Tambah Prestasi</h6>
                                 <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                                     <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                                         <li class="breadcrumb-item">
@@ -27,17 +27,17 @@
                                             </a>
                                         </li>
                                         <li class="breadcrumb-item">
-                                            <a href="{{ url('/dashboard/admin/news/berita') }}">
-                                                Berita
+                                            <a href="{{ url('/dashboard/admin/mahasiswa/prestasi') }}">
+                                                Prestasi
                                             </a>
                                         </li>
-                                        <li class="breadcrumb-item active" aria-current="page">Tambah Berita</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Tambah Prestasi</li>
                                     </ol>
                                 </nav>
                             </div>
                             <div class="col-lg-6 col-5 text-right">
-                                {{-- <a href="#" class="btn btn-sm btn-neutral">Tambah Berita</a> --}}
-                                <a href="#" class="btn btn-sm btn-neutral">Kelola Berita</a>
+                                {{-- <a href="#" class="btn btn-sm btn-neutral">Tambah Prestasi</a> --}}
+                                {{-- <a href="#" class="btn btn-sm btn-neutral">Kelola Prestasi</a> --}}
                             </div>
                         </div>
                     </div>
@@ -52,70 +52,67 @@
 
                                 <!-- Card header -->
                                 <div class="card-header">
-                                    <h3 class="mb-0">Tambah Berita</h3>
+                                    <h3 class="mb-0">Tambah Prestasi</h3>
                                 </div>
                                 <!-- Card body -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Judul Berita</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1"></div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Konten Berita</label>
+                                        <label for="exampleInputEmail1">Nama Mahasiswa</label>
+                                        <br>
+                                            <small>
+                                                <i>(Pisahkan dengan koma jika lebih dari satu.)</i>
+                                            </small>
+                                            <br>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    {{-- value="Bucharest, Cluj, Iasi, Timisoara, Piatra Neamt" --}}
+                                                    data-toggle="tags"
+                                                    name="nama_mahasiswa"/>
+                                                <br>
+                                                    {{--
+                                        <label for="exampleInputEmail1">Judul Prestasi</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"></div> --}}
+                                                    {{-- <div class="form-group">
+                                            <label for="exampleInputEmail1">Konten Prestasi</label>
                                             <textarea name="konten" class="form-control my-editor"></textarea>
-                                            {{-- <input type="text" class="form-control" id="exampleInputEmail1"> --}}
-                                        </div>
-
+                                            {{-- <input type="text" class="form-control" id="exampleInputEmail1"> --
+                                        </div> --}}
                                     </div>
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="exampleFormControlSelect1">Program Studi</label>
+                                        <select class="form-control" id="exampleFormControlSelect1" name="jurusan">
+                                            <option>Informatika</option>
+                                            <option>Sistem Informasi</option>
+                                        </select>
+                                        </div>
+                                         <div class="form-group">
+                                        <label for="keg">Nama Kegiatan</label>
+                                        <input type="text" class="form-control" id="keg">
+                                    </div>
+
+
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="exampleDatepicker">Waktu Kegiatan</label>
+                                            <input class="form-control datepicker" placeholder="Select date" type="text" value="06/20/2018">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pres">Prestasi yang dicapai</label>
+                                            <input type="text" class="form-control" id="pres">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="exampleFormControlSelect1">Individu/Tim</label>
+                                        <select class="form-control" id="exampleFormControlSelect1" name="kategori">
+                                            <option>Individu</option>
+                                            <option>Tim</option>
+                                        </select>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-lg-3">
-                                <div class="card">
-                                    <!-- Card header -->
-                                    <div class="card-header">
-                                        <h3 class="mb-0">Foto Banner</h3>
-                                    </div>
-                                    <!-- Card body -->
-                                    <div class="card-body">
-                                        <!-- Single -->
-                                        <div
-                                            class="dropzone dropzone-single mb-3"
-                                            data-toggle="dropzone"
-                                            data-dropzone-url="http://">
-                                            <div class="fallback">
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="projectCoverUploads">
-                                                        <label class="custom-file-label" for="projectCoverUploads">Choose file</label>
-                                                    </div>
-                                                </div>
-                                                <div class="dz-preview dz-preview-single">
-                                                    <div class="dz-preview-cover">
-                                                        <img
-                                                            class="dz-preview-img"
-                                                            src="..."
-                                                            alt="..."
-                                                            data-dz-thumbnail="data-dz-thumbnail"></div>
-                                                    </div>
-                                                </div>
 
-                                            </div>
-                                        </div>
-                                        <!-- Tags -->
-                                        <div class="card">
-                                            <!-- Card header -->
-                                            <div class="card-header">
-                                                <h3 class="mb-0">Tags</h3>
-                                            </div>
-                                            <!-- Card body -->
-                                            <div class="card-body">
-                                                {{-- <form> --}}
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        {{-- value="Bucharest, Cluj, Iasi, Timisoara, Piatra Neamt" --}}
-                                                        data-toggle="tags"/>
-                                                {{-- </form> --}}
-                                            </div>
-                                        </div>
                                         <!-- Aksi -->
                                         <div class="card">
                                             <!-- Card header -->
@@ -163,6 +160,8 @@
                                     <script
                                         src="../../assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
                                     <script src="<?php echo asset('assets/js/demo.min.js')?>"></script>
+                                    <script src="<?php echo asset('assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')?>"></script>
+
                                     <script
                                         src="<?php echo asset('assets/vendor/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js')?>"></script>
 

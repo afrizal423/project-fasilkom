@@ -30,7 +30,7 @@
                     </nav>
                 </div>
                 <div class="col-lg-6 col-5 text-right">
-                    <a href="{{ url('/dashboard/admin/berita/create') }}" class="btn btn-sm btn-neutral">Tambah Berita</a>
+                    <a href="{{ url('/dashboard/admin/news/berita/create') }}" class="btn btn-sm btn-neutral">Tambah Berita</a>
                     <a href="#" class="btn btn-sm btn-neutral">Kelola Berita</a>
                 </div>
             </div>

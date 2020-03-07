@@ -38,27 +38,29 @@ Route::group(['middleware' => ['web']], function () {
     });
     Route::get('/dashboard/admin', 'AdminController@index')->name('admin');
 
+    Route::group(['prefix' => 'dashboard/admin'], function () {
+        // Route::resource("prestasi", "PrestasiController");
+
+        Route::group(['prefix' => 'mahasiswa'], function () {
+            Route::resource("prestasi", "PrestasiController");
+            Route::resource("datamhs", "MahasiswaController");
+            Route::resource("ta", "TugasakhirController");
+
+        });
+
+        Route::group(['prefix' => 'news'], function () {
+           Route::resource("berita", "BeritaController");
+           Route::resource("event", "EventController");
+           Route::resource("pengumuman", "PengumumanController");
+
+        });
+
+        Route::resource("alumni", "AlumniController");
+
+    });
+
     //Route::get('/dashboard/admin/mahasiswa', 'MahasiswaController@index')->name('mahasiswa');
-
-    Route::resource("/dashboard/admin/mahasiswa", "MahasiswaController");
-
-    Route::resource("/dashboard/admin/mahasiswa/ta", "TugasakhirController");
-
-    Route::resource("/dashboard/admin/mahasiswa/prestasi", "PrestasiController");
-
-    Route::resource("/dashboard/admin/berita", "BeritaController");
-
-    Route::resource("/dashboard/admin/event", "EventController");
-
-    Route::resource("/dashboard/admin/pengumuman", "PengumumanController");
-
-    Route::resource("/dashboard/admin/alumni", "AlumniController");
-
-
-
-
-
-
-
+    // // Route::resource("/dashboard/admin/mahasiswa/prestasi", "PrestasiController");
+    // Route::resource("/dashboard/admin/alumni", "AlumniController");
     Route::get('/home', 'HomeController@index')->name('home');
 });
