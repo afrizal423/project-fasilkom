@@ -33,7 +33,7 @@
 <body class="container-fluid">
 
   <header @if(Request::is('/')) class="vh-100 overflow-hidden" @else class="bg-dark w-auto" @endif >
-    <nav class="navbar navbar-expand-lg container-fluid">
+    <nav class="navbar navbar-expand-lg container-fluid @if(Request::is('/')) position-absolute  @endif ">
       <div class="container">
         <a href="#" class="navbar-brand">
           <img src="{{ asset('images/logo2.png') }}" alt="Logo UPN 'Veteran Jawa Timur'">
