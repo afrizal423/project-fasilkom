@@ -18,27 +18,27 @@
         <div id="pengumuman-item" class="row">
           <ul class="col-sm">
             <li>
-              <a href="">
+              <a href="/single">
                 <i class="fa fa-bullhorn"></i> [18 Sep 2019] <strong>Perpanjangan Beasiswa Muamalat</strong>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/single">
                 <i class="fa fa-bullhorn"></i> [20 Sep 2019] <strong>Panggilan Untuk Calon Penerima Bidikmisi</strong>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/single">
                 <i class="fa fa-bullhorn"></i> [21 Sep 2019] <strong>Beasiswa Tanoto Foundation Periode 2019/2020</strong>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/single">
                 <i class="fa fa-bullhorn"></i> [21 Sep 2019] <strong>Penerima Beasiswa Lestari Banten Energi</strong>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/single">
                 <i class="fa fa-bullhorn"></i> [26 Sep 2019] <strong>Beasiswa Unggulan Bank Indonesia</strong>
               </a>
             </li>
@@ -46,27 +46,27 @@
 
           <ul class="col-sm">
             <li>
-              <a href="">
+              <a href="/single">
                 <i class="fa fa-bullhorn"></i> [18 Sep 2019] <strong>Perpanjangan Beasiswa Muamalat</strong>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/single">
                 <i class="fa fa-bullhorn"></i> [20 Sep 2019] <strong>Panggilan Untuk Calon Penerima Bidikmisi</strong>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/single">
                 <i class="fa fa-bullhorn"></i> [21 Sep 2019] <strong>Beasiswa Tanoto Foundation Periode 2019/2020</strong>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/single">
                 <i class="fa fa-bullhorn"></i> [21 Sep 2019] <strong>Penerima Beasiswa Lestari Banten Energi</strong>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/single">
                 <i class="fa fa-bullhorn"></i> [26 Sep 2019] <strong>Beasiswa Unggulan Bank Indonesia</strong>
               </a>
             </li>
@@ -87,11 +87,11 @@
           <div class="event-preview col-sm-10 col-md-6 mb-3 mb-md-0">
             <h3>Seminar Nasional "Di Balik Tabir Pendidikan"</h3>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <a href="">Read more</a>
+            <a href="/single">Read more</a>
           </div>
 
           <div class="event-img col-sm-4 d-none d-md-flex">
-            <a href="">
+            <a href="/single">
               {{-- <img src="{{ asset('images/poster1.jpg') }}" alt=""> --}}
               <div class="hover-preview">
                 <div class="hover-content">
@@ -112,11 +112,11 @@
           <div class="event-preview col-sm-10 col-md-6">
             <h3>Seminar Nasional Saham</h3>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <a href="">Read more</a>
+            <a href="/single">Read more</a>
           </div>
 
           <div class="event-img col-sm-4 d-none d-md-flex">
-            <a href="">
+            <a href="/single">
               {{-- <img src="{{ asset('images/poster2.jpg') }}" alt=""> --}}
               <div class="hover-preview">
                 <div class="hover-content">
@@ -137,11 +137,11 @@
           <div class="event-preview col-sm-10 col-md-6">
             <h3>Turnamen Tenis Lapangan</h3>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <a href="">Read more</a>
+            <a href="/single">Read more</a>
           </div>
 
           <div class="event-img col-sm-4 d-none d-md-flex">
-            <a href="">
+            <a href="/single">
               {{-- <img src="{{ asset('images/poster3.jpg') }}" alt=""> --}}
               <div class="hover-preview">
                 <div class="hover-content">
@@ -163,28 +163,28 @@
             <div class="berita-item-content pt-2 pl-2">
               <div class="berita-tag">Health</div>
               <div class="berita-date">30 Agustus 2020</div>
-              <a href="#" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
+              <a href="/single" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
             </div>
           </div>
           <div class="berita-item col p-1 p-md-2">
             <div class="berita-item-content pt-2 pl-2">
               <div class="berita-tag">Health</div>
               <div class="berita-date">30 Agustus 2020</div>
-              <a href="#" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
+              <a href="/single" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
             </div>
           </div>
           <div class="berita-item col p-1 p-md-2">
             <div class="berita-item-content pt-2 pl-2">
               <div class="berita-tag">Health</div>
               <div class="berita-date">30 Agustus 2020</div>
-              <a href="#" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
+              <a href="/single" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
             </div>
           </div>
           <div class="berita-item col p-1 p-md-2">
             <div class="berita-item-content pt-2 pl-2">
               <div class="berita-tag">Health</div>
               <div class="berita-date">30 Agustus 2020</div>
-              <a href="#" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
+              <a href="/single" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
             </div>
           </div>
         </div>
@@ -194,28 +194,28 @@
             <div class="berita-item-content pt-2 pl-2">
               <div class="berita-tag">Health</div>
               <div class="berita-date">30 Agustus 2020</div>
-              <a href="#" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
+              <a href="/single" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
             </div>
           </div>
           <div class="berita-item col p-1 p-md-2">
             <div class="berita-item-content pt-2 pl-2">
               <div class="berita-tag">Health</div>
               <div class="berita-date">30 Agustus 2020</div>
-              <a href="#" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
+              <a href="/single" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
             </div>
           </div>
           <div class="berita-item col p-1 p-md-2">
             <div class="berita-item-content pt-2 pl-2">
               <div class="berita-tag">Health</div>
               <div class="berita-date">30 Agustus 2020</div>
-              <a href="#" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
+              <a href="/single" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
             </div>
           </div>
           <div class="berita-item col p-1 p-md-2">
             <div class="berita-item-content pt-2 pl-2">
               <div class="berita-tag">Health</div>
               <div class="berita-date">30 Agustus 2020</div>
-              <a href="#" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
+              <a href="/single" class="berita-title">Lorem ipsum dolor sit amet consectetur</a>
             </div>
           </div>
         </div>

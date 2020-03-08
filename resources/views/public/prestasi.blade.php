@@ -1,7 +1,8 @@
 @include('public.templates.pubHeader')
 
 <main class="container my-5">
-  <h1 class="text-center my-5">Daftar Prestasi Mahasiswa</h1>
+  <h1 class="text-center">Daftar Prestasi Mahasiswa</h1>
+  <div class="text-center">Yang ada di Fakultas Ilmu Komputer</div> <hr>
 
   <div class="table-responsive">
     <table id="table" class="table">

@@ -36,6 +36,12 @@ Route::get('/events', function() {
 Route::get('/single', function() {
   return view('public/single', ['title' => 'Single']);
 });
+Route::get('/pkl', function() {
+    return view('public/pkl', ['title' => 'PKL']);
+  });
+  Route::get('/tugasakhir', function() {
+    return view('public/ta', ['title' => 'Tugas Akhir']);
+  });
 
 Route::group(['middleware' => ['web']], function () {
     Auth::routes();

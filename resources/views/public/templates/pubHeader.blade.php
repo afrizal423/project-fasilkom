@@ -53,7 +53,7 @@
             <li class="nav-item">
               <a href="/" class="nav-link {{ (request()->is('/')) ? 'active' : '' }}">Beranda</a>
             </li>
-            <li class="nav-item dropdown">
+            {{-- <li class="nav-item dropdown">
               <a href="#" id="navbarDropdown"
                   class="nav-link dropdown-toggle"
                   role="button"
@@ -67,11 +67,14 @@
                 <a href="" class="dropdown-item">Kewirausahaan</a>
                 <a href="" class="dropdown-item">Beasiswa</a>
               </div>
-            </li>
+            </li> --}}
+            <li class="nav-item">
+                <a href="/pengumuman" class="nav-link">Pengumuman</a>
+              </li>
             <li class="nav-item">
               <a href="ormawa.html" class="nav-link">Ormawa</a>
             </li>
-            <li class="nav-item dropdown">
+            {{-- <li class="nav-item dropdown">
               <a href="#"
                   id="navbarDropdown"
                   class="nav-link dropdown-toggle"
@@ -84,9 +87,12 @@
                 <a href="" class="dropdown-item">Informatika</a>
                 <a href="" class="dropdown-item">Sistem Informasi</a>
               </div>
-            </li>
+            </li> --}}
             <li class="nav-item">
-              <a href="tugasakhir.html"
+                <a href="/pkl" class="nav-link">PKL</a>
+              </li>
+            <li class="nav-item">
+              <a href="/tugasakhir"
                 class="nav-link">
                 Tugas Akhir
               </a>
@@ -114,13 +120,13 @@
       <div id="banner-carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           @foreach($images as $image)
-            <li data-target="#banner-carousel" data-slide-to="{{ $loop->index }}" @if($loop->first) class="active" @endif></li>  
+            <li data-target="#banner-carousel" data-slide-to="{{ $loop->index }}" @if($loop->first) class="active" @endif></li>
           @endforeach
         </ol>
         <div class="carousel-inner">
           @foreach($images as $image)
             <div class="carousel-item @if($loop->first) active @endif">
-              <div class="carousel-img-container" 
+              <div class="carousel-img-container"
                     style="background-image: url('/images/{{ $image }}');">
                 @if($loop->first)
                   <div class="carousel-caption">
@@ -142,5 +148,5 @@
         </a>
       </div>
     @endif
-    
+
   </header>
