@@ -127,7 +127,7 @@
                                                     print_r($_POST);
                                                 }
                                                 ?>
-                                                <button class="btn btn-warning" type="submit">Draft</button>
+                                                {{-- <button class="btn btn-warning" type="submit">Draft</button> --}}
                                                 <button class="btn btn-primary" type="submit">Simpan</button>
                                             </div>
                                         </div>

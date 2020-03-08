@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Tugasakhir;
+use App\Pkl;
 use Illuminate\Http\Request;
 
-class TugasakhirController extends Controller
+class PklController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +18,7 @@ class TugasakhirController extends Controller
     }
     public function index()
     {
-        return view('admin.ta.index');
+        return view('admin.pkl.index');
         //
     }
 
@@ -29,27 +29,16 @@ class TugasakhirController extends Controller
      */
     public function create()
     {
-        return view('admin.ta.create');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+        return view('admin.pkl.create');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Tugasakhir  $tugasakhir
+     * @param  \App\Pkl  $pkl
      * @return \Illuminate\Http\Response
      */
-    public function show(Tugasakhir $tugasakhir)
+    public function show(Pkl $pkl)
     {
         //
     }
@@ -57,10 +46,10 @@ class TugasakhirController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Tugasakhir  $tugasakhir
+     * @param  \App\Pkl  $pkl
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tugasakhir $tugasakhir)
+    public function edit(Pkl $pkl)
     {
         //
     }
@@ -69,10 +58,10 @@ class TugasakhirController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Tugasakhir  $tugasakhir
+     * @param  \App\Pkl  $pkl
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tugasakhir $tugasakhir)
+    public function update(Request $request, Pkl $pkl)
     {
         //
     }
@@ -80,10 +69,10 @@ class TugasakhirController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Tugasakhir  $tugasakhir
+     * @param  \App\Pkl  $pkl
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tugasakhir $tugasakhir)
+    public function destroy(Pkl $pkl)
     {
         //
     }

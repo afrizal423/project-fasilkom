@@ -1735,16 +1735,18 @@ portions of the Software. -->
                     <div class="row align-items-center justify-content-lg-between">
                         <div class="col-lg-6">
                             <div class="copyright text-center text-lg-left text-muted">
-                                &copy; 2019
+                                &copy; <script type="text/javascript">
+                                    document.write(new Date().getFullYear());
+                                </script>
                                 <a
-                                    href="https://www.creative-tim.com"
+                                    href="#"
                                     class="font-weight-bold ml-1"
-                                    target="_blank">Creative Tim</a>
+                                    target="_blank">Dev Team Fakultas Ilmu Komputer UPN Jatim</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
                                 </li>
                                 <li class="nav-item">
@@ -1758,7 +1760,7 @@ portions of the Software. -->
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://www.creative-tim.com/license" class="nav-link" target="_blank">License</a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>

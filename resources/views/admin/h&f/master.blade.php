@@ -10,7 +10,7 @@
             name="description"
             content="Start your development with a Dashboard for Bootstrap 4.">
         <meta name="author" content="Creative Tim">
-        <title>@yield('judul_halaman')</title>
+        <title>@yield('judul_halaman') | Admin FIK</title>
         <!-- Favicon -->
         <link rel="icon" href="<?php echo asset('images/logo.png')?>" sizes="32x32">
 
@@ -96,7 +96,7 @@
                       <a href="{{url('dashboard/admin/mahasiswa/datamhs')}}" class="nav-link">Data Mahasiswa</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Data PKL</a>
+                        <a href="{{url('dashboard/admin/mahasiswa/pkl')}}" class="nav-link">Data PKL</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{url('dashboard/admin/mahasiswa/ta')}}" class="nav-link">Data Skripsi</a>
@@ -410,6 +410,41 @@
       </div>
     </nav>
     @yield('konten')
+     <!-- Footer -->
+     <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6">
+                <div class="copyright text-center text-lg-left text-muted">
+                    &copy; <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script>
+                    <a
+                        href="#"
+                        class="font-weight-bold ml-1"
+                        target="_blank">Dev Team Fakultas Ilmu Komputer UPN Jatim</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                    {{-- <li class="nav-item">
+                        <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            href="https://www.creative-tim.com/presentation"
+                            class="nav-link"
+                            target="_blank">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.creative-tim.com/license" class="nav-link" target="_blank">License</a>
+                    </li> --}}
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 <!-- Argon Scripts -->
         <!-- Core -->
@@ -435,6 +470,7 @@
         <script src="<?php echo asset('assets/js/argon.js?v=1.1.0')?>"></script>
         <!-- Demo JS - remove this in your project -->
         <script src="<?php echo asset('assets/js/demo.min.js')?>"></script>
+        @yield('script-dashboard')
     </body>
 
 </html>

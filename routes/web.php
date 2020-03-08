@@ -51,6 +51,7 @@ Route::group(['middleware' => ['web']], function () {
             Route::resource("prestasi", "PrestasiController");
             Route::resource("datamhs", "MahasiswaController");
             Route::resource("ta", "TugasakhirController");
+            Route::resource("pkl", "PklController");
 
         });
 

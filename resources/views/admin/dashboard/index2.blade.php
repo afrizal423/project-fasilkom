@@ -34,9 +34,9 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col">
-                                        <h5 class="card-title text-uppercase text-muted mb-0 text-white">Tasks completed</h5>
-                                        <span class="h2 font-weight-bold mb-0 text-white">8/24</span>
-                                        <div class="progress progress-xs mt-3 mb-0">
+                                        <h5 class="card-title text-uppercase text-muted mb-0 text-white">Total Mahasiswa Fasilkom</h5>
+                                        <span class="h2 font-weight-bold mb-0 text-white">250</span>
+                                        {{-- <div class="progress progress-xs mt-3 mb-0">
                                             <div
                                                 class="progress-bar bg-success"
                                                 role="progressbar"
@@ -44,9 +44,9 @@
                                                 aria-valuemin="0"
                                                 aria-valuemax="100"
                                                 style="width: 30%;"></div>
-                                        </div>
+                                        </div> --}}
                                     </div>
-                                    <div class="col-auto">
+                                    {{-- <div class="col-auto">
                                         <button
                                             type="button"
                                             class="btn btn-sm btn-neutral mr-0"
@@ -60,7 +60,7 @@
                                             <a class="dropdown-item" href="#">Another action</a>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <p class="mt-3 mb-0 text-sm">
                                     <a href="#!" class="text-nowrap text-white font-weight-600">See details</a>
@@ -74,9 +74,9 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col">
-                                        <h5 class="card-title text-uppercase text-muted mb-0 text-white">Contacts</h5>
-                                        <span class="h2 font-weight-bold mb-0 text-white">123/267</span>
-                                        <div class="progress progress-xs mt-3 mb-0">
+                                        <h5 class="card-title text-uppercase text-muted mb-0 text-white">Total Alumni Mahasiswa Fasilkom</h5>
+                                        <span class="h2 font-weight-bold mb-0 text-white">500</span>
+                                        {{-- <div class="progress progress-xs mt-3 mb-0">
                                             <div
                                                 class="progress-bar bg-success"
                                                 role="progressbar"
@@ -84,9 +84,9 @@
                                                 aria-valuemin="0"
                                                 aria-valuemax="100"
                                                 style="width: 50%;"></div>
-                                        </div>
+                                        </div> --}}
                                     </div>
-                                    <div class="col-auto">
+                                    {{-- <div class="col-auto">
                                         <button
                                             type="button"
                                             class="btn btn-sm btn-neutral mr-0"
@@ -100,7 +100,7 @@
                                             <a class="dropdown-item" href="#">Another action</a>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <p class="mt-3 mb-0 text-sm">
                                     <a href="#!" class="text-nowrap text-white font-weight-600">See details</a>
@@ -114,9 +114,9 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col">
-                                        <h5 class="card-title text-uppercase text-muted mb-0 text-white">Items sold</h5>
-                                        <span class="h2 font-weight-bold mb-0 text-white">200/300</span>
-                                        <div class="progress progress-xs mt-3 mb-0">
+                                        <h5 class="card-title text-uppercase text-muted mb-0 text-white">Total Mahasiswa Berprestasi</h5>
+                                        <span class="h2 font-weight-bold mb-0 text-white">200</span>
+                                        {{-- <div class="progress progress-xs mt-3 mb-0">
                                             <div
                                                 class="progress-bar bg-success"
                                                 role="progressbar"
@@ -124,9 +124,9 @@
                                                 aria-valuemin="0"
                                                 aria-valuemax="100"
                                                 style="width: 80%;"></div>
-                                        </div>
+                                        </div> --}}
                                     </div>
-                                    <div class="col-auto">
+                                    {{-- <div class="col-auto">
                                         <button
                                             type="button"
                                             class="btn btn-sm btn-neutral mr-0"
@@ -140,7 +140,7 @@
                                             <a class="dropdown-item" href="#">Another action</a>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <p class="mt-3 mb-0 text-sm">
                                     <a href="#!" class="text-nowrap text-white font-weight-600">See details</a>
@@ -154,9 +154,9 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col">
-                                        <h5 class="card-title text-uppercase text-muted mb-0 text-white">Notifications</h5>
-                                        <span class="h2 font-weight-bold mb-0 text-white">50/62</span>
-                                        <div class="progress progress-xs mt-3 mb-0">
+                                        <h5 class="card-title text-uppercase text-muted mb-0 text-white">Jumlah Data Tugas AKhir mahasiswa</h5>
+                                        <span class="h2 font-weight-bold mb-0 text-white">230</span>
+                                        {{-- <div class="progress progress-xs mt-3 mb-0">
                                             <div
                                                 class="progress-bar bg-success"
                                                 role="progressbar"
@@ -164,9 +164,9 @@
                                                 aria-valuemin="0"
                                                 aria-valuemax="100"
                                                 style="width: 90%;"></div>
-                                        </div>
+                                        </div> --}}
                                     </div>
-                                    <div class="col-auto">
+                                    {{-- <div class="col-auto">
                                         <button
                                             type="button"
                                             class="btn btn-sm btn-neutral mr-0"
@@ -180,7 +180,7 @@
                                             <a class="dropdown-item" href="#">Another action</a>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <p class="mt-3 mb-0 text-sm">
                                     <a href="#!" class="text-nowrap text-white font-weight-600">See details</a>
@@ -194,39 +194,39 @@
                     <div class="card">
                         <div class="card-header bg-transparent">
                             <h6 class="text-muted text-uppercase ls-1 mb-1">Overview</h6>
-                            <h2 class="h3 mb-0">Sales value</h2>
+                            <h2 class="h3 mb-0">Jumlah Mahasiswa Fasilkom Tiap Angkatan</h2>
                         </div>
                         <div class="card-body">
                             <!-- Chart -->
                             <div class="chart">
                                 <!-- Chart wrapper -->
-                                <canvas id="chart-sales" class="chart-canvas"></canvas>
+                                <canvas id="mhs-thn" class="chart-canvas"></canvas>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header bg-transparent">
                             <h6 class="text-muted text-uppercase ls-1 mb-1">Overview</h6>
-                            <h2 class="h3 mb-0">Sales value</h2>
+                            <h2 class="h3 mb-0">Jumlah Mahasiswa Fasilkom Tiap Jurusan</h2>
                         </div>
                         <div class="card-body">
                             <!-- Chart -->
                             <div class="chart">
                                 <!-- Chart wrapper -->
-                                <canvas id="chart-sales1" class="chart-canvas"></canvas>
+                                <canvas id="mhs-jur" class="chart-canvas"></canvas>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header bg-transparent">
                             <h6 class="text-muted text-uppercase ls-1 mb-1">Overview</h6>
-                            <h2 class="h3 mb-0">Sales value</h2>
+                            <h2 class="h3 mb-0">Jumlah Mahasiswa Berprestai di Fasilkom</h2>
                         </div>
                         <div class="card-body">
                             <!-- Chart -->
                             <div class="chart">
                                 <!-- Chart wrapper -->
-                                <canvas id="chart-sales" class="chart-canvas"></canvas>
+                                <canvas id="mhs-pres" class="chart-canvas"></canvas>
                             </div>
                         </div>
                     </div>
@@ -1100,20 +1100,23 @@
          </div>
        </div> --}}
                 <!-- Footer -->
-                <footer class="footer pt-0">
+                 <!-- Footer -->
+                 {{-- <footer class="footer pt-0">
                     <div class="row align-items-center justify-content-lg-between">
                         <div class="col-lg-6">
                             <div class="copyright text-center text-lg-left text-muted">
-                                &copy; 2019
+                                &copy; <script type="text/javascript">
+                                    document.write(new Date().getFullYear());
+                                </script>
                                 <a
-                                    href="https://www.creative-tim.com"
+                                    href="#"
                                     class="font-weight-bold ml-1"
-                                    target="_blank">Creative Tim</a>
+                                    target="_blank">Dev Team Fakultas Ilmu Komputer UPN Jatim</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
                                 </li>
                                 <li class="nav-item">
@@ -1127,11 +1130,171 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="https://www.creative-tim.com/license" class="nav-link" target="_blank">License</a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
-                </footer>
+                </footer> --}}
             </div>
         </div>
+@endsection
+@section('script-dashboard')
+
+<script>
+    var SalesChart = (function() {
+
+// Variables
+
+var $chart = $('#mhs-jur');
+
+
+// Methods
+
+function init($this) {
+    var salesChart = new Chart($this, {
+        type: 'bar',
+        options: {
+            scales: {
+                yAxes: [{
+                    gridLines: {
+                        color: Charts.colors.gray[200],
+                        zeroLineColor: Charts.colors.gray[200]
+                    },
+                    ticks: {
+
+                    }
+                }]
+            }
+        },
+        data: {
+            labels: ['Informatika', 'Sistem Informasi'],
+            datasets: [{
+                label: 'Jumlah',
+                data: [305, 204]
+            }]
+        }
+    });
+
+    // Save to jQuery object
+
+    $this.data('chart', salesChart);
+
+};
+
+
+// Events
+
+if ($chart.length) {
+    init($chart);
+}
+
+})();
+</script>
+{{-- mhs --}}
+
+<script>
+ var MahasiswaThnChart = (function() {
+
+// Variables
+
+var $chart = $('#mhs-thn');
+
+
+// Methods
+
+function init($this) {
+    var mahasiswathnChart = new Chart($this, {
+        type: 'bar',
+        options: {
+            scales: {
+                yAxes: [{
+                    gridLines: {
+                        color: Charts.colors.gray[200],
+                        zeroLineColor: Charts.colors.gray[200]
+                    },
+                    ticks: {
+
+                    }
+                }]
+            }
+        },
+        data: {
+            labels: ['2014', '2015', '2016', '2017', '2018', '2019'],
+            datasets: [{
+                label: 'Jumlah',
+                data: [40, 70, 80, 110, 140, 150]
+            }]
+        }
+    });
+
+    // Save to jQuery object
+
+    $this.data('chart', mahasiswathnChart);
+
+};
+
+
+// Events
+
+if ($chart.length) {
+    init($chart);
+}
+
+})();
+
+</script>
+
+<script>
+    var MahasiswaPresChart = (function() {
+
+   // Variables
+
+   var $chart = $('#mhs-pres');
+
+
+   // Methods
+
+   function init($this) {
+       var mahasiswapresChart = new Chart($this, {
+           type: 'line',
+           options: {
+               scales: {
+                   yAxes: [{
+                       gridLines: {
+                           color: Charts.colors.gray[200],
+                           zeroLineColor: Charts.colors.gray[200]
+                       },
+                       ticks: {
+
+                       }
+                   }]
+               }
+           },
+           data: {
+               labels: ['2014', '2015', '2016', '2017', '2018', '2019'],
+               datasets: [{
+                   label: 'Jumlah',
+                   data: [2, 5, 1, 2, 1, 4]
+               }]
+           }
+       });
+
+       // Save to jQuery object
+
+       $this.data('chart', mahasiswapresChart);
+
+   };
+
+
+   // Events
+
+   if ($chart.length) {
+       init($chart);
+   }
+
+   })();
+
+   </script>
+
+
 @endsection

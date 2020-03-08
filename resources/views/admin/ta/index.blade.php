@@ -1,4 +1,4 @@
-@extends('admin.h&f.master') @section('judul_halaman', 'Prestasi')
+@extends('admin.h&f.master') @section('judul_halaman', 'Tugas Akhir')
 @section('header')
 <!-- Page plugins -->
 <link
@@ -17,7 +17,7 @@
         <div class="header-body">
             <div class="row align-items-center py-4">
                 <div class="col-lg-6 col-7">
-                    <h6 class="h2 text-white d-inline-block mb-0">Data Prestasi</h6>
+                    <h6 class="h2 text-white d-inline-block mb-0">Data Tugas Akhir</h6>
                     <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                         <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                             <li class="breadcrumb-item">
@@ -25,15 +25,15 @@
                                     <i class="fas fa-home"></i>
                                 </a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Prestasi</li>
+                            <li class="breadcrumb-item active" aria-current="page">Tugas Akhir</li>
                         </ol>
                     </nav>
                 </div>
                 <div class="col-lg-6 col-5 text-right">
                     <a
-                        href="{{ url('/dashboard/admin/mahasiswa/prestasi/create') }}"
-                        class="btn btn-sm btn-neutral">Tambah Data Prestasi</a>
-                    {{-- <a href="#" class="btn btn-sm btn-neutral">Kelola Prestasi</a> --}}
+                        href="{{ url('/dashboard/admin/mahasiswa/ta/create') }}"
+                        class="btn btn-sm btn-neutral">Tambah Data Tugas Akhir</a>
+                    {{-- <a href="#" class="btn btn-sm btn-neutral">Kelola Tugas Akhir</a> --}}
                 </div>
             </div>
         </div>
@@ -92,9 +92,9 @@
             <div class="card">
                 <!-- Card header -->
                 <div class="card-header">
-                    <h3 class="mb-0">Data Prestasi</h3>
+                    <h3 class="mb-0">Data Tugas Akhir</h3>
                     <p class="text-sm mb-0">
-                        Berikut ini adalah data prestasi mahasiswa yang ada di Fakultas Ilmu Komputer,
+                        Berikut ini adalah data Tugas Akhir mahasiswa yang ada di Fakultas Ilmu Komputer,
                         UPN "Veteran" Jawa Timur.
                     </p>
                 </div>
@@ -102,34 +102,34 @@
                     <table class="table table-flush" id="datatable-buttons">
                         <thead class="thead-light">
                             <tr>
-                                <th>Nama Kegiatan/Acara</th>
-                                <th>Waktu Penyelenggaraan</th>
-                                <th>Prestasi yang dicapai</th>
-                                <th>Individu/Tim</th>
                                 <th>Nama Mahasiswa</th>
+                                <th>NPM Mahasiswa</th>
                                 <th>Jurusan</th>
+                                <th>Judul</th>
+                                <th>DosPem 1</th>
+                                <th>Dospem 2</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
-                                <th>Nama Kegiatan/Acara</th>
-                                <th>Waktu Penyelenggaraan</th>
-                                <th>Prestasi yang dicapai</th>
-                                <th>Individu/Tim</th>
                                 <th>Nama Mahasiswa</th>
+                                <th>NPM Mahasiswa</th>
                                 <th>Jurusan</th>
+                                <th>Judul</th>
+                                <th>DosPem 1</th>
+                                <th>Dospem 2</th>
                                 <th>Action</th>
                             </tr>
                         </tfoot>
                         <tbody>
                             <tr>
-                                <td>LKTI</td>
-                                <td>20 Januari 2015</td>
-                                <td>Juara 1</td>
-                                <td>Individu</td>
-                                <td>Firya Nadhira</td>
-                                <td>Teknik Informatika</td>
+                                <td>Afrizal Muhammad Yasin</td>
+                                <td>17081010092</td>
+                                <td>Informatika</td>
+                                <td>Sistem Informasi Aduan Mahasiswa</td>
+                                <td>Ronggo Alit</td>
+                                <td>Faisal M</td>
                                 <td>
                                     <form action="" onsubmit="return confirm('Hapus data 1 ?')" method="post">
                                         @csrf
@@ -145,12 +145,12 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Tennis Lapangan</td>
-                                <td>1 September 2019</td>
-                                <td>Juara 3</td>
-                                <td>Individu</td>
-                                <td>Dina Ratnaningtyas</td>
-                                <td>Sistem Informasi</td>
+                                <td>Afrizal Muhammad Yasin</td>
+                                <td>17081010092</td>
+                                <td>Informatika</td>
+                                <td>Sistem Informasi Akademik Mahasiswa</td>
+                                <td>Ronggo Alit</td>
+                                <td>Faisal M</td>
                                 <td>
                                     <form action="" onsubmit="return confirm('Hapus data 1 ?')" method="post">
                                         @csrf
@@ -166,12 +166,12 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Pimnas</td>
-                                <td>18 Januari 2018</td>
-                                <td>Juara 2</td>
-                                <td>Individu</td>
-                                <td>Muhammad Arif Hakim</td>
-                                <td>Teknik Informatika</td>
+                                <td>Afrizal Muhammad Yasin</td>
+                                <td>17081010092</td>
+                                <td>Informatika</td>
+                                <td>Sistem Informasi Prestasi Mahasiswa</td>
+                                <td>Ronggo Alit</td>
+                                <td>Faisal M</td>
                                 <td>
                                     <form action="" onsubmit="return confirm('Hapus data 1 ?')" method="post">
                                         @csrf
