@@ -21,6 +21,12 @@ Route::get('/', function () {
   ]);
 });
 
+Route::get('/form-alumni', function() {
+  return view('public/form-alumni', ['title' => 'Form Survey Alumni']);
+});
+
+Route::post('/form-alumni', 'FormAlumniController@post');
+
 Route::get('/prestasi', function() {
   return view('public/prestasi', ['title' => 'Prestasi']);
 });
