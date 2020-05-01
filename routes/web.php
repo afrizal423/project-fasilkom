@@ -21,11 +21,11 @@ Route::get('/', function () {
   ]);
 });
 
-Route::get('/form-alumni', function() {
-  return view('public/form-alumni', ['title' => 'Form Survey Alumni']);
+Route::get('/survey', function() {
+  return view('public/survey-alumni', ['title' => 'Form Survey Alumni']);
 });
 
-Route::post('/form-alumni', 'FormAlumniController@post');
+Route::post('/survey', 'FormAlumniController@post');
 
 Route::get('/prestasi', function() {
   return view('public/prestasi', ['title' => 'Prestasi']);
