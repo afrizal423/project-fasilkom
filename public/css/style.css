@@ -453,6 +453,10 @@ input[type=number] {
   margin-top: 10px;
 }
 
+#form-alumni-form {
+  overflow: hidden;
+}
+
 .event-item:nth-of-type(1) .event-item-img {
   background-image: url("/images/event1.jpg");
   background-size: cover;

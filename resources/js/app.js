@@ -6,6 +6,9 @@
 
 require('./bootstrap');
 
+import Swiper from "swiper";
+import "swiper/css/swiper.min.css";
+
 window.Vue = require('vue');
 
 /**
@@ -30,4 +33,14 @@ Vue.component('form-alumni', require('./components/form-alumni-component.vue').d
 
 const app = new Vue({
     el: '#form-alumni',
+});
+
+const swiper = new Swiper('.swiper-container', {
+  direction: "horizontal",
+  slidesPerView: 1,
+  speed: 200,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  }
 });

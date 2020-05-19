@@ -477,6 +477,10 @@ input[type="number"] {
   }
 }
 
+#form-alumni-form {
+  overflow: hidden;
+}
+
 @for $count from 1 through 4 {
   .event-item:nth-of-type(#{$count}){
     .event-item-img {
