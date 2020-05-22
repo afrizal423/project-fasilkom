@@ -387,48 +387,174 @@
               <div class="form-check">
                 <input type="radio" 
                   class="form-check-input" 
-                  name="besarMetodePembelajaran"
-                  id="lokalRadio"
+                  name="besarPerkuliahan"
+                  id="1kuliah"
                   value="1">
-                <label for="lokalRadio" class="form-check-label">
-                  Lokal / Berwirausaha Tidak Berizin
+                <label for="1kuliah" class="form-check-label">
+                  [1] Sangat Besar
                 </label>
               </div>
     
               <div class="form-check">
                 <input type="radio" 
                   class="form-check-input" 
-                  name="besarMetodePembelajaran"
-                  id="nasionalRadio"
+                  name="besarPerkuliahan"
+                  id="2kuliah"
                   value="2">
-                <label for="nasionalRadio" class="form-check-label">
-                  Nasional / Berwirausaha yang Berizin
+                <label for="2kuliah" class="form-check-label">
+                  [2] Besar
                 </label>
               </div>
 
               <div class="form-check">
                 <input type="radio" 
                   class="form-check-input" 
-                  name="besarMetodePembelajaran"
-                  id="multinasionalRadio"
+                  name="besarPerkuliahan"
+                  id="3kuliah"
                   value="3">
-                <label for="multinasionalRadio" class="form-check-label">
-                  Multinasional
+                <label for="3kuliah" class="form-check-label">
+                  [3] Cukup Besar
                 </label>
               </div>
 
               <div class="form-check">
                 <input type="radio" 
                   class="form-check-input" 
-                  name="besarMetodePembelajaran"
-                  id="internasionalRadio"
+                  name="besarPerkuliahan"
+                  id="4kuliah"
                   value="4">
-                <label for="internasionalRadio" class="form-check-label">
-                  Internasional
+                <label for="4kuliah" class="form-check-label">
+                  [4] Kurang
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarPerkuliahan"
+                  id="5kuliah"
+                  value="5">
+                <label for="5kuliah" class="form-check-label">
+                  [5] Tidak sama sekali
                 </label>
               </div>
             </fieldset>
-            
+
+            <fieldset class="form-group">
+              <legend>Menurut anda seberapa besar metode pembelajaran demonstrasi yang dilaksanakan di program studi anda?</legend>
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarDemonstrasi"
+                  id="1demo"
+                  value="1">
+                <label for="1demo" class="form-check-label">
+                  [1] Sangat Besar
+                </label>
+              </div>
+    
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarDemonstrasi"
+                  id="2demo"
+                  value="2">
+                <label for="2demo" class="form-check-label">
+                  [2] Besar
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarDemonstrasi"
+                  id="3demo"
+                  value="3">
+                <label for="3demo" class="form-check-label">
+                  [3] Cukup Besar
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarDemonstrasi"
+                  id="4demo"
+                  value="4">
+                <label for="4demo" class="form-check-label">
+                  [4] Kurang
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarDemonstrasi"
+                  id="5demo"
+                  value="5">
+                <label for="5demo" class="form-check-label">
+                  [5] Tidak sama sekali
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <legend>Menurut anda seberapa besar metode pembelajaran partisipasi dalam proyek riset yang dilaksanakan di program studi anda?</legend>
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarPartisipasiRiset"
+                  id="1riset"
+                  value="1">
+                <label for="1riset" class="form-check-label">
+                  [1] Sangat Besar
+                </label>
+              </div>
+    
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarPartisipasiRiset"
+                  id="2riset"
+                  value="2">
+                <label for="2riset" class="form-check-label">
+                  [2] Besar
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarPartisipasiRiset"
+                  id="3riset"
+                  value="3">
+                <label for="3riset" class="form-check-label">
+                  [3] Cukup Besar
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarPartisipasiRiset"
+                  id="4riset"
+                  value="4">
+                <label for="4riset" class="form-check-label">
+                  [4] Kurang
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" 
+                  class="form-check-input" 
+                  name="besarPartisipasiRiset"
+                  id="5riset"
+                  value="5">
+                <label for="5riset" class="form-check-label">
+                  [5] Tidak sama sekali
+                </label>
+              </div>
+            </fieldset>
           </div>
           
         </div>
