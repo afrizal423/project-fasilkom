@@ -62,6 +62,7 @@
 
   <script src="{{ mix('/js/app.js') }}"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://surveyjs.azureedge.net/1.7.7/survey.jquery.min.js"></script>
 
   {{-- Custom JS --}}
   <script src="{{ asset('js/index.js') }}"></script>
