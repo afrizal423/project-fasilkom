@@ -60012,16 +60012,15 @@ Vue.component('form-alumni', __webpack_require__(/*! ./components/form-alumni-co
 
 var app = new Vue({
   el: '#form-alumni'
-});
-var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-container', {
-  direction: "horizontal",
-  slidesPerView: 1,
-  speed: 200,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets'
-  }
-});
+}); // const swiper = new Swiper('.swiper-container', {
+//   direction: "horizontal",
+//   slidesPerView: 1,
+//   speed: 200,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     type: 'bullets',
+//   }
+// });
 
 /***/ }),
 

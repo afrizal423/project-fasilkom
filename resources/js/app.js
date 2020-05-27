@@ -35,12 +35,13 @@ const app = new Vue({
     el: '#form-alumni',
 });
 
-const swiper = new Swiper('.swiper-container', {
-  direction: "horizontal",
-  slidesPerView: 1,
-  speed: 200,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  }
-});
+// const swiper = new Swiper('.swiper-container', {
+//   direction: "horizontal",
+//   slidesPerView: 1,
+//   speed: 200,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     type: 'bullets',
+//   }
+// });
+
