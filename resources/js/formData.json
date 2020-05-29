@@ -1,0 +1,916 @@
+{
+  "locale":"id","title":
+  {
+    "default":"Heytayo",
+    "id":"Survey Alumni UPN \"Veteran\" Jawa Timur"
+  },
+  "description":{
+    "default":"Heytayo",
+    "id":"Form survey ini diperuntukkan untuk mengumpulkan data terkait alumni Universitas Pembangunan Nasional \"Veteran\" Jawa Timur"
+  },
+  "pages":[
+    {
+      "name":"dataPribadi",
+      "elements":[
+        {
+          "type":"text",
+          "name":"namaLengkap",
+          "title":{"id":"Nama Lengkap"},
+          "isRequired":true
+        },{
+          "type":"text",
+          "name":"npm",
+          "title":{"id":"NPM"},
+          "isRequired":true,
+          "inputType":"number"
+        },{
+          "type":"text",
+          "name":"email",
+          "title":{"id":"Email"},
+          "isRequired":true,
+          "inputType":"email"
+        },{
+          "type":"text",
+          "name":"noTelp",
+          "title":{"id":"Nomor Telepon"},
+          "isRequired":true,
+          "inputType":"tel"
+        },{
+          "type":"radiogroup",
+          "name":"jenisKelamin",
+          "title":{"id":"Jenis Kelamin"},
+          "isRequired":true,
+          "choices":[
+            {
+              "value":"laki",
+              "text":{"id":"Laki - laki"}
+            },{
+              "value":"perempuan",
+              "text":{"id":"Perempuan"}
+            }
+          ]
+        },{
+          "type":"text",
+          "name":"tempatLahir",
+          "title":{"id":"Tempat Lahir"},
+          "isRequired":true
+        },{
+          "type":"text",
+          "name":"tglLahir",
+          "title":{"id":"Tanggal Lahir"},
+          "isRequired":true,
+          "inputType":"date",
+          "max":"2999-12-31"
+        },{
+          "type":"text",
+          "name":"alamatTinggal",
+          "title":{"id":"Alamat Tinggal"},
+          "isRequired":true
+        },{
+          "type":"dropdown",
+          "name":"programStudi",
+          "title":{"id":"Program Studi"},
+          "isRequired":true,
+          "choices":[
+            {
+              "value":"S1 Informatika",
+              "text":{"id":"S1 Informatika"}
+            },{
+              "value":"S1 Sistem Informasi",
+              "text":{"id":"S1 Sistem Informasi"}
+            },{
+              "value":"S1 Ilmu Hukum",
+              "text":{"id":"S1 Ilmu Hukum"}
+            },{
+              "value":"S1 Teknik Kimia",
+              "text":{"id":"S1 Teknik Kimia"}
+            },
+            "S1 Teknik Industri",
+            "S1 Teknik Pangan",
+            "S1 Teknik Lingkungan",
+            "S1 Teknik Sipil",
+            "S1 Arsitektur",
+            "S1 Desain Komunikasi Visual",
+            "S1 Manajemen",
+            "S1 Ekonomi Pembangunan",
+            "S1 Akutansi",
+            "S1 Ilmu Komunikasi",
+            "S1 Ilmu Administrasi Bisnis",
+            "S1 Ilmu Administrasi Negara",
+            "S1 Hubungan Internasinoal",
+            "S1 Hubungan Internasinoa1",
+            "S1 Agroteknologi",
+            "S1 Agribisnis",
+            "S2 Akuntansi",
+            "S2 Agribisnis",
+            "S2 Manajemen",
+            "S2 Agroteknologi",
+            "S2 Ilmu Lingkungan"
+          ]
+        },{
+          "type":"text",
+          "name":"bulanYudisium",
+          "title":{"id":"Bulan & Tahun Yudisium"},
+          "isRequired":true,
+          "inputType":"month"
+        },{
+          "type":"text",
+          "name":"bulanWisuda",
+          "title":{"id":"Bulan & Tahun Wisuda"},
+          "isRequired":true,
+          "inputType":"month"
+        }
+      ]
+    },{
+      "name":"dataPekerjaan",
+      "elements":[
+        {
+          "type":"radiogroup",
+          "name":"sudahKerja",
+          "title":{"id":"Apakah anda sudah bekerja?"},
+          "isRequired":true,
+          "choices":[
+            {"value":"sudah-sedang","text":{"id":"Sudah / sedang bekerja"}},
+            {"value":"resign-pernah","text":{"id":"Resign / pernah bekerja"}},
+            {"value":"wirausaha","text":{"id":"Wirausaha"}},
+            {"value":"belum","text":{"id":"Belum bekerja"}}
+          ]
+        },{
+          "type":"text",
+          "name":"bulanTerimaKerja",
+          "visible":false,
+          "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+          "title":{"id":"Bulan & tahun diterima bekerja pertama kali"},
+          "requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+          "inputType":"month"
+        },{
+          "type":"dropdown",
+          "name":"gajiPertama",
+          "visible":false,
+          "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+          "title":{"id":"Berapa gaji pertama anda?"},
+          "requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+          "choices":[
+            {"value":"-2","text":"< 2jt"},
+            {"value":"2-5","text":{"id":"2jt - < 5jt"}},
+            {"value":"5-10","text":{"id":"5jt - < 10jt"}},
+            {"value":"10+","text":{"id":"> 10jt"}}
+          ]
+        },{
+          "type":"text",
+          "name":"namaPerusahaan",
+          "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+          "title":{"id":"Nama perusahaan (saat ini / terakhir kali anda bekerja)."},
+          "requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']"
+        },{
+          "type":"dropdown",
+          "name":"jabatan",
+          "visible":false,
+          "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah', 'wirausaha']",
+          "title":{"id":"Jenis posisi / jabatan (saat ini / terakhir kali anda bekerja)."},
+          "requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah', 'wirausaha']",
+          "hasOther":true,
+          "choices":[
+            "Komisioner",
+            "Direktur",
+            "Manajer",
+            "Kepala Bagian",
+            "Staff",
+            "Pemilik"
+          ]
+        },{
+          "type":"text",
+          "name":"keteranganJabatan",
+          "visible":false,
+          "visibleIf":"{jabatan} notempty",
+          "title":{"id":"Keterangan lain posisi / jabatan"},
+          "placeHolder":{
+            "id":"Staff keuangan; Kepala bagian pemasaran; Direktur sumber daya; dll."
+          }
+        },{
+          "type":"text",
+          "name":"alamatPerusahaan",
+          "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+          "title":{"id":"Alamat perusahaan"},
+          "requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']"
+        },{
+          "type":"text",
+          "name":"emailPerusahaan",
+          "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+          "title":{"id":"Email perusahaan / HRD"},
+          "requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+          "inputType":"email"
+        },{
+          "type":"text",
+          "name":"namaAtasan",
+          "visibleIf":"{jabatan} anyof ['Komisioner', 'Direktur', 'Manajer', 'Kepala Bagian', 'Staff', 'other']",
+          "title":{"id":"Nama atasan"},
+          "requiredIf":"{jabatan} anyof ['Komisioner', 'Direktur', 'Manajer', 'Kepala Bagian', 'Staff', 'other']"
+        },{
+          "type":"text",
+          "name":"jabatanAtasan",
+          "visibleIf":"{jabatan} anyof ['Komisioner', 'Direktur', 'Manajer', 'Kepala Bagian', 'Staff', 'other']",
+          "title":{"id":"Jabatan atasan"},
+          "requiredIf":"{jabatan} anyof ['Komisioner', 'Direktur', 'Manajer', 'Kepala Bagian', 'Staff', 'other']"
+        },{
+          "type":"radiogroup",
+          "name":"jenisPerusahaan",
+          "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+          "title":{"id":"Jenis perusahaan"},
+          "requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+          "choices":[
+            {
+              "value":"pemerintah-bumn",
+              "text":{"id":"Instansi pemerintah (termasuk BUMN)"}
+            },{
+              "value":"nonprofit-swadaya",
+              "text":{"id":"Organisasi non-profit / lembaga swadaya masyarakat"}
+            },{
+              "value":"swasta",
+              "text":{"id":"Perusahaan swasta"}
+            },{
+              "value":"internasional",
+              "text":{"id":"Internasional"}
+            }
+          ]
+        },{
+          "type":"radiogroup",
+          "name":"ukuranTempatKerja",
+          "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah', 'wirausaha']",
+          "title":{"id":"Tingkat / ukuran tempat kerja"},
+          "requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah', 'wirausaha']",
+          "choices":[
+            {"value":"lokal-takberizin","text":{"id":"Lokal / berwirausaha tak berizin"}},
+            {"value":"nasional-berizin","text":{"id":"Nasional / berwirausaha berizin"}},
+            {"value":"multinasional","text":{"id":"Multinasional"}},
+            {"value":"internasional","text":{"id":"Internasional"}}
+          ]
+        }
+      ], "title":{"id":"Data Pekerjaan"}
+    },{
+      "name":"detailPekerjaan",
+      "elements":[
+        {
+          "type":"radiogroup",
+          "name":"besarMetodePerkuliahan",
+          "title":{
+            "id":"Menurut anda seberapa besar metode pembelajaran perkuliahan yang dilaksanakan di program studi anda?"
+          },
+          "isRequired":true,
+          "choices":[
+            {"value":"1","text":{"id":"[1] Sangat besar"}},
+            {"value":"2","text":{"id":"[2] Besar"}},
+            {"value":"3","text":{"id":"[3] Cukup besar"}},
+            {"value":"4","text":{"id":"[4] Kurang"}},
+            {"value":"5","text":{"id":"[5] Sangat kurang"}}
+          ]
+        },{
+          "type":"radiogroup",
+          "name":"besarMetodeDemonstrasi",
+          "title":{
+            "id":"Menurut anda seberapa besar metode pembelajaran demonstrasi yang dilaksanakan di program studi anda?"
+          },"isRequired":true,
+          "choices":[
+            {"value":"1","text":{"id":"[1] Sangat besar"}},
+            {"value":"2","text":{"id":"[2] Besar"}},
+            {"value":"3","text":{"id":"[3] Cukup besar"}},
+            {"value":"4","text":{"id":"[4] Kurang"}},
+            {"value":"5","text":{"id":"[5] Sangat kurang"}}
+          ]
+        },{
+          "type":"radiogroup",
+          "name":"besarMetodeProyekRiset",
+          "title":{
+            "id":"Menurut anda seberapa besar metode pembelajaran partisipasi dalam proyek riset yang dilaksanakan di program studi anda?"
+          },"isRequired":true,
+          "choices":[
+            {"value":"1","text":{"id":"[1] Sangat besar"}},
+            {"value":"2","text":{"id":"[2] Besar"}},
+            {"value":"3","text":{"id":"[3] Cukup besar"}},
+            {"value":"4","text":{"id":"[4] Kurang"}},
+            {"value":"5","text":{"id":"[5] Sangat kurang"}}
+          ]
+        },{
+          "type":"radiogroup",
+          "name":"besarMetodeMagang",
+          "title":{
+            "id":"Menurut anda seberapa besar metode pembelajaran magang yang dilaksanakan di program studi anda?"
+          },"isRequired":true,
+          "choices":[
+            {"value":"1","text":{"id":"[1] Sangat besar"}},
+            {"value":"2","text":{"id":"[2] Besar"}},
+            {"value":"3","text":{"id":"[3] Cukup besar"}},
+            {"value":"4","text":{"id":"[4] Kurang"}},
+            {"value":"5","text":{"id":"[5] Sangat kurang"}}
+          ]
+        },{
+          "type":"radiogroup",
+          "name":"besarMetodePraktikum",
+          "title":{
+            "id":"Menurut anda seberapa besar metode pembelajaran praktikum yang dilaksanakan di program studi anda?"
+          },"isRequired":true,
+          "choices":[
+            {"value":"1","text":{"id":"[1] Sangat besar"}},
+            {"value":"2","text":{"id":"[2] Besar"}},
+            {"value":"3","text":{"id":"[3] Cukup besar"}},
+            {"value":"4","text":{"id":"[4] Kurang"}},
+            {"value":"5","text":{"id":"[5] Sangat kurang"}}
+          ]
+        },{
+          "type":"radiogroup",
+          "name":"besarMetodeKerjaLapangan",
+          "title":{
+            "id":"Menurut anda seberapa besar metode pembelajaran kerja lapangan yang dilaksanakan di program studi anda?"
+          },"isRequired":true,
+          "choices":[
+            {"value":"1","text":{"id":"[1] Sangat besar"}},
+            {"value":"2","text":{"id":"[2] Besar"}},
+            {"value":"3","text":{"id":"[3] Cukup besar"}},
+            {"value":"4","text":{"id":"[4] Kurang"}},
+            {"value":"5","text":{"id":"[5] Sangat kurang"}}
+            ]
+          },{
+            "type":"radiogroup",
+            "name":"besarMetodeDiskusi",
+            "title":{
+              "id":"Menurut anda seberapa besar metode pembelajaran diskusi yang dilaksanakan di program studi anda?"
+            },"isRequired":true,
+            "choices":[
+              {"value":"1","text":{"id":"[1] Sangat besar"}},
+              {"value":"2","text":{"id":"[2] Besar"}},
+              {"value":"3","text":{"id":"[3] Cukup besar"}},
+              {"value":"4","text":{"id":"[4] Kurang"}},
+              {"value":"5","text":{"id":"[5] Sangat kurang"}}
+            ]
+          },{
+            "type":"radiogroup",
+            "name":"kapanCariKerja",
+            "title":{"id":"Kapan anda mulai mencari pekerjaan? (Freelance tidak termasuk)"},
+            "isRequired":true,
+            "commentText":{"id":"Pertanyaan"},
+            "choices":[
+              "Sebelum lulus",
+              "Setelah lulus",
+              {"value":"Belum cari","text":{"id":"Saya sedang tidak bekerja dan belum mencari pekerjaan"}}
+            ]
+          },{
+            "type":"checkbox",
+            "name":"metodeCariKerja",
+            "visibleIf":"{kapanCariKerja} anyof ['Sebelum lulus', 'Setelah lulus']",
+            "title":{
+              "id":"Bagaimana anda mencari pekerjaan tersebut?"
+            },"requiredIf":"{kapanCariKerja} anyof ['Sebelum lulus', 'Setelah lulus']",
+            "hasOther":true,
+            "choices":[
+              {
+                "value":"1",
+                "text":{"id":"[1] Melalui iklan di koran / majalah / brosur"}
+              },{
+                "value":"2",
+                "text":{"id":"[2] Melamar ke perusahaan tanpa mengetahui lowongan yang ada"}
+              },{
+                "value":"3",
+                "text":{"id":"[3] Pergi ke bursa / pameran kerja"}
+              },{
+                "value":"4",
+                "text":{"id":"[4] Mencari lewat internet / iklan online / milis"}
+              },{
+                "value":"5",
+                "text":{"id":"[5] Dihubungi oleh perusahaan"}
+              },{
+                "value":"6",
+                "text":{"id":"[6] Menghubungi Kemenakertrans"}
+              },{
+                "value":"7",
+                "text":{"id":"[7] Menghubungi agen tenaga kerja komersial / swasta"}
+              },{
+                "value":"8",
+                "text":{"id":"[8] Memperoleh informasi dari pusat / kantor pengembangan karir fakultas / universitas"}
+              },{
+                "value":"9",
+                "text":{"id":"[9] Menghubungi kantor kemahasiswaan / hubungan alumni"}
+                },{
+                  "value":"10",
+                  "text":{"id":"[10] Membangun jejaring (network) sejak masih kuliah"}
+                },{
+                  "value":"11",
+                  "text":{"id":"[11] Melalui relasi (misalnya dosen, orang tua, saudara, teman, dll)"}
+                },{
+                  "value":"12",
+                  "text":{"id":"[12] Membangun bisnis sendiri"}
+                },{
+                  "value":"13",
+                  "text":{"id":"[13] Melalui penempatan kerja atau magang"}
+                },{
+                  "value":"14",
+                  "text":{"id":"[14] Bekerja di tempat yang sama dengan tempat kerja semasa kuliah"}
+                }
+              ]
+            },{
+              "type":"radiogroup",
+              "name":"kapanDapatKerja",
+              "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+              "title":{"id":"Apakah sebelum atau sesudah lulus, anda memperoleh pekerjaan?"},
+              "requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah']",
+              "choices":[
+                "Sebelum lulus","Sesudah lulus"
+              ]
+            },{
+              "type":"text",
+              "name":"jumlahPerusahaanSudahDilamar",
+              "visibleIf":"{kapanDapatKerja} notempty",
+              "title":{
+                "id":"Berapa instansi / institusi / perusahaan yang sudah anda lamar (lewat surat / email) sebelum anda memperoleh pekerjaan pertama anda?"
+              },"inputType":"number",
+              "placeHolder":{"id":"10"}
+            },{
+              "type":"text",
+              "name":"jumlahResponLamaran",
+              "visibleIf":"{kapanDapatKerja} notempty",
+              "title":{
+                "id":"Berapa instansi / institusi / perusahaan yang merespon lamaran anda?"
+              },"inputType":"number",
+              "placeHolder":{"id":"6"}
+            },{
+              "type":"text",
+              "name":"jumlahUndanganWawancara",
+              "visibleIf":"{kapanDapatKerja} notempty",
+              "title":{
+                "id":"Berapa instansi / institusi / perusahaan yang mengundang anda untuk wawancara?"
+              },"inputType":"number",
+              "placeHolder":{"id":"4"}
+            },{
+              "type":"radiogroup",
+              "name":"lanjutKuliah",
+              "title":{"id":"Apakah anda melanjutkan kuliah profesi atau pascasarjana?"},
+              "isRequired":true,
+              "choices":[
+                {
+                  "value":"true",
+                  "text":{"id":"Ya"}
+                },{
+                  "value":"false",
+                  "text":{"id":"Tidak"}
+                }
+              ]
+            },{
+              "type":"text",
+              "name":"lokasiLanjutKuliah",
+              "visibleIf":"{lanjutKuliah} anyof [true]",
+              "title":{"id":"Di universitas mana?"},
+              "requiredIf":"{lanjutKuliah} anyof [true]"
+            },{
+              "type":"radiogroup",
+              "name":"gambaranSituasi",
+              "title":{"id":"Bagaimana anda menggambarkan situasi anda saat ini?"},
+              "isRequired":true,
+              "hasOther":true,
+              "choices":[
+                {"value":"1","text":{"id":"[1] Saya masih belajar"}},
+                {"value":"2","text":{"id":"[2] Saya sudah menikah"}},
+                {"value":"3","text":{"id":"[3] Saya sibuk dengan keluarga dan anak - anak"}},
+                {"value":"4","text":{"id":"[4] Saya sedang mencari pekerjaan"}},
+                {"value":"5","text":{"id":"[5] Saya sedang bekerja"}}
+              ]
+            },{
+              "type":"radiogroup",
+              "name":"aktifCariKerja",
+              "visibleIf":"{kapanCariKerja} anyof ['Belum cari']",
+              "title":{"id":"Apakah anda aktif mencari pekerjaan dalam 4 minggu terakhir?"},
+              "isRequired":true,
+              "requiredIf":"{kapanCariKerja} anyof ['Belum cari']",
+              "hasOther":true,
+              "choices":[
+                {"value":"1","text":{"id":"[1] Tidak"}},
+                {
+                  "value":"2",
+                  "text":{
+                    "id":"[2] Tidak, tetapi saya sedang menunggu hasil lamaran kerja"
+                  }
+                },{
+                  "value":"3",
+                  "text":{
+                    "id":"[3] Ya, saya akan mulai bekerja dalam dua minggu ke depan"
+                  }
+                },{
+                  "value":"4",
+                  "text":{
+                    "id":"[4] Ya, tapi saya belum pasti akan bekerja dalam dua minggu ke depan"
+                  }
+                }
+              ]
+            },{
+              "type":"dropdown",
+              "name":"bidangKerja",
+              "title":{
+                "id":"Tempat anda bekerja saat ini bergerak di bidang apa?"
+              },"isRequired":true,
+              "choices":[
+                {
+                  "value":"1",
+                  "text":{
+                    "id":"[01] Pertanian tanaman, peternakan, perburuan, dan kegiatan yang berhubungan dengan itu"
+                  }
+                },{
+                  "value":"2",
+                  "text":{"id":"[02] Kehutanan dan penebangan kayu"}
+                },{
+                  "value":"3",
+                  "text":{"id":"[03] Perikanan"}
+                },{
+                  "value":"4",
+                  "text":{"id":"[04] Pertambangan batu bara dan lignit"}
+                },{
+                  "value":"5",
+                  "text":{"id":"[05] Pertambangan minyak bumi dan gas alam dan panas bumi"}
+                },{
+                  "value":"6",
+                  "text":{"id":"[06] Pertambangan bijih logam"}
+                },{
+                  "value":"7",
+                  "text":{"id":"[07] Pertambangan dan penggalian lainnya"}
+                },{
+                  "value":"8",
+                  "text":{"id":"[08] Jasa pertambangan"}
+                },{
+                  "value":"9",
+                  "text":{"id":"[09] Industri makanan"}
+                },{
+                  "value":"10",
+                  "text":{"id":"[10] Industri minuman"}
+                },{
+                  "value":"11",
+                  "text":{"id":"[11] Industri pengolahan tembakau"}
+                },{
+                  "value":"12",
+                  "text":{"id":"[12] Industri tekstil"}
+                },{
+                  "value":"13",
+                  "text":{"id":"[13] Industri pakaian jadi"}
+                },{
+                  "value":"14",
+                  "text":{"id":"[14] Industri kulit, barang dari kulit dan alas kaki"}
+                },{
+                  "value":"15",
+                  "text":{
+                    "id":"[15] Industri kayu, barang dari kayu dan gabus (tidak termasuk furnitur) dan barang anyaman dari bambu, rotan dan sejenisnya"
+                  }
+                },{
+                  "value":"16",
+                  "text":{"id":"[16] Industri kertas dan barang dari kertas"}
+                },{
+                  "value":"17",
+                  "text":{"id":"[17] Industri perncetakan dan reproduksi media rekaman"}
+                },{
+                  "value":"18",
+                  "text":{
+                    "id":"[18] Industri produk dari batu bara dan pengilangan minyak bumi"
+                  }
+                },{
+                  "value":"19",
+                  "text":{"id":"[19] Industri bahan kimia dan barang dari bahan kimia"}
+                },{
+                  "value":"20",
+                  "text":{
+                    "id":"[20] Industri farmasi, produk obat kimia dan obat tradisional"
+                  }
+                },{
+                  "value":"21",
+                  "text":{"id":"[21] Industri karet, barang dari karet dan plastik"}
+                },{
+                  "value":"22",
+                  "text":{"id":"[22] Industri barang galian bukan logam"}
+                },{
+                  "value":"23",
+                  "text":{"id":"[23] Industri logam dasar"}
+                },{
+                  "value":"24",
+                  "text":{"id":"[24] Industri barang logam, bukan mesin dan peralatannya"}
+                },{
+                  "value":"25",
+                  "text":{"id":"[25] Industri komputer, barang elektronik dan optik"}
+                },{
+                  "value":"26",
+                  "text":{"id":"[26] Industri peralatan listrik"}
+                },{
+                  "value":"27",
+                  "text":{"id":"[27] Industri mesin dan perlengkapannya"}
+                },{
+                  "value":"28",
+                  "text":{"id":"[28] Industri kendaraan bermotor, trailer dan semi trailer"}
+                },{
+                  "value":"29",
+                  "text":{"id":"[29] Industri alat angkut lainnya"}
+                },{
+                  "value":"30",
+                  "text":{"id":"[30] Industri furnitur"}
+                },{
+                  "value":"31",
+                  "text":{"id":"[31] Industri pengolahan lainnya"}
+                },{
+                  "value":"32",
+                  "text":{"id":"[32] Jasa reparasi dan pemasangan mesin dan peralatan"}
+                },{
+                  "value":"33",
+                  "text":{
+                    "id":"[33] Pengadaan listrik, gas, uap / air panas, dan udara dingin"
+                  }
+                },{
+                  "value":"34",
+                  "text":{"id":"[34] Pengadaan air"}
+                },{
+                  "value":"35",
+                  "text":{"id":"[35] Pengolahan limbah"}
+                },{
+                  "value":"36",
+                  "text":{"id":"[36] Pengolahan sampah dan daur ulang"}
+                },{
+                  "value":"37",
+                  "text":{
+                    "id":"[37] Jasa pembersihan dan pengelolaan sampah lainnya"
+                  }
+                },{
+                  "value":"38",
+                  "text":{"id":"[38] Konstruksi gedung"}
+                },{
+                  "value":"39",
+                  "text":{"id":"[39] Konstruksi bangunan sipil"}
+                },{
+                  "value":"40",
+                  "text":{"id":"[40] Konstruksi khusus"}
+                },{
+                  "value":"41",
+                  "text":{
+                    "id":"[41] Perdagangan, reparasi, perawatan mobil dan sepeda motor"
+                  }
+                },{
+                  "value":"42",
+                  "text":{"id":"[42] Perdagangan besar, bukan mobil dan sepeda motor"}
+                },{
+                  "value":"43",
+                  "text":{"id":"[43] Perdagangan eceran, bukan mobil dan sepeda motor"}
+                },{
+                  "value":"44",
+                  "text":{"id":"[44] Angkutan darat dan angkutan saluran pipa"}
+                },{
+                  "value":"45",
+                  "text":{"id":"[45] Angkutan air"}
+                },{
+                  "value":"46",
+                  "text":{"id":"[46] Angkutan udara"}
+                },{
+                  "value":"47",
+                  "text":{"id":"[47] Pergudangan dan jasa penunjang angkutan"}
+                },{
+                  "value":"48",
+                  "text":{"id":"[48] Pos dan kurir"}
+                },{
+                  "value":"49",
+                  "text":{"id":"[49] Penyediaan akomodasi"}
+                },{
+                  "value":"50",
+                  "text":{"id":"[50] Penyediaan makanan dan minuman"}
+                },{
+                  "value":"51",
+                  "text":{"id":"[51] Penerbitan"}
+                },{
+                  "value":"52",
+                  "text":{
+                    "id":"[52] Produksi gambar bergerak, video dan program televisi, perekaman suara dan penerbitan musik"
+                  }
+                },{
+                  "value":"53",
+                  "text":{"id":"[53] Penyiaran dan pemrograman"}
+                },{
+                  "value":"54",
+                  "text":{"id":"[54] Telekomunikasi"}
+                },{
+                  "value":"55",
+                  "text":{
+                    "id":"[55] Kegiatan pemrograman, konsultasi komputer, dan kegiatan yang berhubungan dengan hal tersebut"
+                  }
+                },{
+                  "value":"56",
+                  "text":{"id":"[56] Kegiatan jasa informasi"}
+                },{
+                  "value":"57",
+                  "text":{"id":"[57] Jasa keuangan, bukan asuransi dan dana pensiun"}
+                },{
+                  "value":"58",
+                  "text":{
+                    "id":"[58] Asuransi, reasuransi dan dana pensiun, bukan jaminan sosial wajib"
+                  }
+                },{
+                  "value":"59",
+                  "text":{
+                    "id":"[59] Jasa penunjang jasa keuangan, asuransi, dan dana pensiun"
+                  }
+                },{
+                  "value":"60",
+                  "text":{"id":"[60] Real estate"}
+                },{
+                  "value":"61",
+                  "text":{"id":"[61] Jasa hukum dan akuntansi"}
+                },{
+                  "value":"62",
+                  "text":{"id":"[62] Kegiatan kantor pusat dan konsultasi manajemen"}
+                },{
+                  "value":"63",
+                  "text":{
+                    "id":"[63] Jasa arsitektur dan teknik sipil; analisis dan uji teknis"
+                  }
+                },{
+                  "value":"64",
+                  "text":{"id":"[64] Penelitian dan pengembangan ilmu pengetahuan"}
+                },{
+                  "value":"65",
+                  "text":{"id":"[65] Periklanan dan penelitian pasar"}
+                },{
+                  "value":"66",
+                  "text":{"id":"[66] Jasa profesional, ilmiah, dan teknik lainnya"}
+                },{
+                  "value":"67",
+                  "text":{"id":"[67] Jasa kesehatan hewan"}
+                },{
+                  "value":"68",
+                  "text":{"id":"[68] Jasa persewaan dan sewa guna usaha tanpa hak opsi"}
+                },{
+                  "value":"69",
+                  "text":{"id":"[69] Jasa ketenagakerjaan"}
+                },{
+                  "value":"70",
+                  "text":{
+                    "id":"[70] Jasa agen perjalanan, penyelenggara tur dan jasa reservasi lainnya"
+                  }
+                },{
+                  "value":"71",
+                  "text":{"id":"[71] Jasa keamanan dan penyelidikan"}
+                },{
+                  "value":"72",
+                  "text":{"id":"[72] Jasa untuk gedung dan pertamanan"}
+                },{
+                  "value":"73",
+                  "text":{
+                    "id":"[73] Jasa administrasi kantor, jasa penunjang kantor, dan jasa penunjang usaha lainnya"
+                  }
+                },{
+                  "value":"74",
+                  "text":{
+                    "id":"[74] Administrasi pemerintahan, pertahanan, dan jaminan sosial wajib"
+                  }
+                },{
+                  "value":"75",
+                  "text":{"id":"[75] Jasa pendidikan"}
+                },{
+                  "value":"76",
+                  "text":{"id":"[76] Jasa kesehatan manusia"}
+                },{
+                  "value":"77",
+                  "text":{"id":"[77] Jasa kegiatan sosial di dalam panti"}
+                },{
+                  "value":"78",
+                  "text":{"id":"[78] Jasa kegiatan sosial di luar panti"}
+                },{
+                  "value":"79",
+                  "text":{"id":"[79] Kegiatan hiburan, kesenian, dan kreativitas"}
+                },{
+                  "value":"80",
+                  "text":{
+                    "id":"[80] Perpustakaan, arsip, museum, dan kegiatan kebudayaan lainnya"
+                  }
+                },{
+                  "value":"81",
+                  "text":{"id":"[81] Kegiatan perjudian dan pertaruhan"}
+                },{
+                  "value":"82",
+                  "text":{"id":"[82] Kegiatan olahraga dan rekreasi lainnya"}
+                },{
+                  "value":"83",
+                  "text":{"id":"[83] Kegiatan keanggotaan organisasi"}
+                },{
+                  "value":"84",
+                  "text":{
+                    "id":"[84] Jasa reparasi komputer dan barang keperluan pribadi dan perlengkapan rumah tangga"
+                  }
+                },{
+                  "value":"85",
+                  "text":{"id":"[85] Jasa perorangan lainnya"}
+                },{
+                  "value":"86",
+                  "text":{"id":"[86] Jasa perorangan yang melayani rumah tangga"}
+                },{
+                  "value":"87",
+                  "text":{
+                    "id":"[87] Kegiatan yang menghasilkan barang dan jasa oleh rumah tangga yang digunakan sendiri untuk memenuhi kebutuhan"
+                  }
+                },{
+                  "value":"88",
+                  "text":{
+                    "id":"[88] Kegiatan badan internasional dan badan ekstra internasional lainnya"
+                  }
+                }
+              ]
+            },{
+              "type":"radiogroup",
+              "name":"sumberDanaKuliah",
+              "title":{"id":"Dari mana sumber dana pembiayaan kuliah anda?"},
+              "isRequired":true,
+              "hasOther":true,
+              "choices":[
+                {
+                  "value":"1",
+                  "text":{"id":"[1] Biaya sendiri / keluarga"}
+                },{
+                  "value":"2",
+                  "text":{"id":"[2] Beasiswa ADIK"}
+                },{
+                  "value":"3",
+                  "text":{"id":"[3] Beasiswa BIDIKMISI"}
+                },{
+                  "value":"4",
+                  "text":{"id":"[4] Beasiswa PPA"}
+                },{
+                  "value":"5",
+                  "text":{"id":"[5] Beasiswa AFIRMASI"}
+                },{
+                  "value":"6",
+                  "text":{"id":"[6] Beasiswa perusahaan / swasta"}
+                }
+              ]
+            },{
+              "type":"text",
+              "name":"pendapatanUtama",
+              "visibleIf":"{sudahKerja} anyof ['sudah-sedang']",
+              "title":{
+                "id":"Kira - kira berapa pendapatan anda setiap bulannya dari pekerjaan utama?"
+              },
+              "requiredIf":"{sudahKerja} anyof ['sudah-sedang']",
+              "inputType":"number"
+            },{
+              "type":"text",
+              "name":"pendapatanLembur",
+              "visibleIf":"{sudahKerja} anyof ['sudah-sedang']",
+              "title":{
+                "id":"Kira - kira berapa pendapatan anda setiap bulannya dari lembur / intensif?"
+              },"requiredIf":"{sudahKerja} anyof ['sudah-sedang']",
+              "inputType":"number"
+            },{
+              "type":"text",
+              "name":"pendapatanLain",
+              "visibleIf":"{sudahKerja} anyof ['sudah-sedang']",
+              "title":{
+                "id":"Kira - kira berapa pendapatan anda setiap bulannya dari pekerjaan lainnya?"
+              },"requiredIf":"{sudahKerja} anyof ['sudah-sedang']",
+              "inputType":"number"
+            },{
+              "type":"radiogroup",
+              "name":"hubunganStudiKerja",
+              "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah', 'wirausaha']",
+              "title":{
+                "id":"Seberapa erat hubungan antara bidang studi dengan pekerjaan anda?"
+              },"requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah', 'wirausaha']",
+              "choices":[
+                {
+                  "value":"1",
+                  "text":{"id":"[1] Sangat erat"}
+                },{
+                  "value":"2",
+                  "text":{"id":"[2] Erat"}
+                },{
+                  "value":"3",
+                  "text":{"id":"[3] Cukup erat"}
+                },{
+                  "value":"4",
+                  "text":{"id":"[4] Kurang erat"}
+                },{
+                  "value":"5",
+                  "text":{"id":"[5] Tidak berhubungan"}
+                }
+              ]
+            },{
+              "type":"radiogroup",
+              "name":"pendidikanSesuaiPekerjaan",
+              "visibleIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah', 'wirausaha']",
+              "title":{
+                "id":"Tingkat pendidikan apa yang paling tepat / sesuai untuk pekerjaan anda saat ini?"
+              },"requiredIf":"{sudahKerja} anyof ['sudah-sedang', 'resign-pernah', 'wirausaha']",
+              "choices":[
+                {
+                  "value":"1",
+                  "text":{"id":"[1] Setingkat lebih tinggi"}
+                },{
+                  "value":"2",
+                  "text":{"id":"[2] Tingkat yang sama"}
+                },{
+                  "value":"3",
+                  "text":{"id":"[3] Setingkat lebih rendah"}
+                },{
+                  "value":"4",
+                  "text":{"id":"[4] Tidak perlu pendidikan tinggi"}
+                }
+              ]
+            }
+          ]
+        }
+      ],"showPageTitles":false
+    }

@@ -6,8 +6,7 @@
 
 require('./bootstrap');
 
-import Swiper from "swiper";
-import "swiper/css/swiper.min.css";
+import * as Survey from "survey-jquery";
 
 window.Vue = require('vue');
 
@@ -35,13 +34,23 @@ const app = new Vue({
     el: '#form-alumni',
 });
 
-// const swiper = new Swiper('.swiper-container', {
-//   direction: "horizontal",
-//   slidesPerView: 1,
-//   speed: 200,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     type: 'bullets',
-//   }
-// });
+Survey.StylesManager.applyTheme("bootstrap");
 
+let surveyJSON = require('./formData.json');
+
+function sendDataToServer(survey) {
+  //send Ajax request to your web server.
+  axios({
+    method: 'get',
+    url: '/suvrey',
+  }).then(function(response) {
+    console.log(response);
+    console.log(JSON.stringify(survey.data));
+  });
+}
+
+let survey = new Survey.Model(surveyJSON);
+$("#surveyContainer").Survey({
+  model: survey,
+  onComplete: sendDataToServer
+});
