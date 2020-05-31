@@ -30,9 +30,9 @@ Vue.component('form-alumni', require('./components/form-alumni-component.vue').d
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#form-alumni',
-});
+// const app = new Vue({
+//     el: '#form-alumni',
+// });
 
 Survey.StylesManager.applyTheme("bootstrap");
 
@@ -41,8 +41,9 @@ let surveyJSON = require('./formData.json');
 function sendDataToServer(survey) {
   //send Ajax request to your web server.
   axios({
-    method: 'get',
-    url: '/suvrey',
+    method: 'post',
+    url: '/survey',
+    data: survey.data,
   }).then(function(response) {
     console.log(response);
     console.log(JSON.stringify(survey.data));
