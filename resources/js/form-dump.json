@@ -381,23 +381,23 @@
           },{
             "value":"9",
             "text":{"id":"[9] Menghubungi kantor kemahasiswaan / hubungan alumni"}
-            },{
-              "value":"10",
-              "text":{"id":"[10] Membangun jejaring (network) sejak masih kuliah"}
-            },{
-              "value":"11",
-              "text":{"id":"[11] Melalui relasi (misalnya dosen, orang tua, saudara, teman, dll)"}
-            },{
-              "value":"12",
-              "text":{"id":"[12] Membangun bisnis sendiri"}
-            },{
-              "value":"13",
-              "text":{"id":"[13] Melalui penempatan kerja atau magang"}
-            },{
-              "value":"14",
-              "text":{"id":"[14] Bekerja di tempat yang sama dengan tempat kerja semasa kuliah"}
-            }
-          ]
+          },{
+            "value":"10",
+            "text":{"id":"[10] Membangun jejaring (network) sejak masih kuliah"}
+          },{
+            "value":"11",
+            "text":{"id":"[11] Melalui relasi (misalnya dosen, orang tua, saudara, teman, dll)"}
+          },{
+            "value":"12",
+            "text":{"id":"[12] Membangun bisnis sendiri"}
+          },{
+            "value":"13",
+            "text":{"id":"[13] Melalui penempatan kerja atau magang"}
+          },{
+            "value":"14",
+            "text":{"id":"[14] Bekerja di tempat yang sama dengan tempat kerja semasa kuliah"}
+          }
+        ]
       },{
         "type":"radiogroup",
         "name":"kapanDapatKerja",
