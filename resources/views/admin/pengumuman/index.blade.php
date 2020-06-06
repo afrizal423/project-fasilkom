@@ -40,6 +40,7 @@
 <!-- Page content -->
 <div class="container-fluid mt--6">
     <div class="row">
+        @foreach ($info as $inf)
         <div class="col-lg-4">
             <div class="card" style="">
                 <img
@@ -47,41 +48,14 @@
                     src="https://m.ayobandung.com/images-bandung/post/articles/2020/01/13/76173/logo_google.jpg"
                     alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make
-                        up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h3 class="card-title">{{ $inf->judul }}</h3>
+                    <p class="card-text">{!!Str::words($inf->konten, 15)
+                        !!}</p>
+                    <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="card" style="">
-                <img
-                    class="card-img-top"
-                    src="https://m.ayobandung.com/images-bandung/post/articles/2020/01/13/76173/logo_google.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make
-                        up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card" style="">
-                <img
-                    class="card-img-top"
-                    src="https://m.ayobandung.com/images-bandung/post/articles/2020/01/13/76173/logo_google.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make
-                        up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
     <!-- Argon Scripts -->
     @endsection @section('script')
