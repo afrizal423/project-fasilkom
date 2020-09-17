@@ -17,6 +17,7 @@ Project ini adalah project lanjutan dari projek praktek kerja lapangan yang dibe
 - Alumni
 - Rest API
 
-### No further development!!!
-- I don't know what happened. I stopped this project
+### Info :
+- Projek ini akan dikembangkan oleh mahasiswa lainnya, untuk dipakai sebagai PKL maupun Skripsi.
+Semua atas perijinan Wakil Dekan 3 Fakultas Ilmu Komputer.
 - Thank you to friends who have contributed
