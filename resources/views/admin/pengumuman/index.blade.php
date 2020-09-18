@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-lg-6 col-5 text-right">
                     <a href="{{ url('/dashboard/admin/news/pengumuman/create') }}" class="btn btn-sm btn-neutral">Tambah Pengumuman</a>
-                    <a href="#" class="btn btn-sm btn-neutral">Kelola Pengumuman</a>
+                    <a href="{{ url('/dashboard/admin/news/pengumuman/manage') }}" class="btn btn-sm btn-neutral">Kelola Pengumuman</a>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
             <div class="card" style="">
                 <img
                     class="card-img-top"
-                    src="https://m.ayobandung.com/images-bandung/post/articles/2020/01/13/76173/logo_google.jpg"
+                    src="{{asset('storage/' . $inf->gambar)}}"
                     alt="Card image cap">
                 <div class="card-body">
                     <h3 class="card-title">{{ $inf->judul }}</h3>

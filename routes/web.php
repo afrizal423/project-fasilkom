@@ -70,6 +70,7 @@ Route::group(['middleware' => ['web']], function () {
         Route::group(['prefix' => 'news'], function () {
            Route::resource("berita", "BeritaController");
            Route::resource("event", "EventController");
+           Route::get("pengumuman/manage", "PengumumanController@manage");
            Route::resource("pengumuman", "PengumumanController");
 
         });

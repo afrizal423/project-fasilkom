@@ -135,6 +135,8 @@
                                             </div>
                                         </div>
                                     </form>
+                                </div>
+                            </div>
                                     <!-- Argon Scripts -->
                                     @endsection @section('script')
                                     <!-- Argon Scripts -->
@@ -142,21 +144,7 @@
                                     <script
                                         src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
-                                    <script src="../../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
-                                    <script
-                                        src="../../assets/vendor/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-                                    <script
-                                        src="../../assets/vendor/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-                                    <script
-                                        src="../../assets/vendor/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
-                                    <script
-                                        src="../../assets/vendor/datatables.net-buttons/js/buttons.html5.min.js"></script>
-                                    <script
-                                        src="../../assets/vendor/datatables.net-buttons/js/buttons.flash.min.js"></script>
-                                    <script
-                                        src="../../assets/vendor/datatables.net-buttons/js/buttons.print.min.js"></script>
-                                    <script
-                                        src="../../assets/vendor/datatables.net-select/js/dataTables.select.min.js"></script>
+
 
                                     <script
                                         src="<?php echo asset('assets/vendor/dropzone/dist/min/dropzone.min.js')?>"></script>

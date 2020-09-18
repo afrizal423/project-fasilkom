@@ -18,7 +18,7 @@
                     <div class="header-body">
                         <div class="row align-items-center py-4">
                             <div class="col-lg-6 col-7">
-                                <h6 class="h2 text-white d-inline-block mb-0">Tambah Pengumuman</h6>
+                                <h6 class="h2 text-white d-inline-block mb-0">Edit Pengumuman</h6>
                                 <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                                     <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                                         <li class="breadcrumb-item">
@@ -31,13 +31,15 @@
                                                 Pengumuman
                                             </a>
                                         </li>
-                                        <li class="breadcrumb-item active" aria-current="page">Tambah Pengumuman</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Edit Pengumuman</li>
                                     </ol>
                                 </nav>
                             </div>
                             <div class="col-lg-6 col-5 text-right">
                                 {{-- <a href="#" class="btn btn-sm btn-neutral">Tambah Pengumuman</a> --}}
-                                <a href="{{ url('/dashboard/admin/news/pengumuman/manage') }}" class="btn btn-sm btn-neutral">Kelola Pengumuman</a>
+                                <a
+                                    href="{{ url('/dashboard/admin/news/pengumuman/manage') }}"
+                                    class="btn btn-sm btn-neutral">Kelola Pengumuman</a>
                             </div>
                         </div>
                     </div>
@@ -49,10 +51,11 @@
                     <div class="col-lg-9">
                         <div class="card">
                             <form
-                                action="{{ url('dashboard/admin/news/pengumuman/') }}"
+                                action="{{ route('pengumuman.update', $inf->id) }}"
                                 method="POST"
                                 enctype="multipart/form-data">
-                                {{ csrf_field() }}
+                                @csrf
+                                @method('PUT')
                                 <!-- Card header -->
                                 <div class="card-header">
                                     <h3 class="mb-0">Tambah Pengumuman</h3>
@@ -66,7 +69,12 @@
                                         </div>
                                         @endif
                                         <label for="exampleInputEmail1">Judul Pengumuman</label>
-                                        <input type="text" name="judul" class="form-control" id="exampleInputEmail1"></div>
+                                        <input
+                                            type="text"
+                                            name="judul"
+                                            class="form-control"
+                                            id="exampleInputEmail1"
+                                            value="{{$inf->judul}}"></div>
                                         <div class="form-group">
                                             @if($errors->has('konten'))
                                             <div class="alert alert-danger" role="alert">
@@ -74,7 +82,7 @@
                                             </div>
                                             @endif
                                             <label for="exampleInputEmail1">Konten Pengumuman</label>
-                                            <textarea name="konten" class="form-control my-editor"></textarea>
+                                            <textarea name="konten" class="form-control my-editor">{{$inf->konten}}</textarea>
                                             {{-- <input type="text" class="form-control" id="exampleInputEmail1"> --}}
                                         </div>
                                         @if($errors->has('kategori'))
@@ -107,18 +115,22 @@
                                     <!-- Card body -->
                                     <div class="card-body">
                                         <!-- Single -->
-                                        <div
-                                            class="dropzone dropzone-single mb-3">
+                                        <div class="dropzone dropzone-single mb-3">
                                             <div class="fallback">
-                                                <div class="custom-file">
-                                                    <input
-                                                        type="file"
-                                                        class="form-control-file"
-                                                        name="gambar"
-                                                        id="projectCoverUploads">
-                                                        <label class="custom-file-label" for="projectCoverUploads">Choose file</label>
+                                                <small class="text-muted">Cover saat ini</small>
+                                                <br>
+                                                    @if($inf->gambar)
+                                                    <img src="{{asset('storage/' . $inf->gambar)}}" width="96px"/>
+                                                    @endif
+                                                    <div class="custom-file">
+                                                        <input
+                                                            type="file"
+                                                            class="form-control-file"
+                                                            name="gambar"
+                                                            id="projectCoverUploads">
+                                                            <label class="custom-file-label" for="projectCoverUploads">Choose file</label>
+                                                        </div>
                                                     </div>
-                                                </div>
                                                 </div>
 
                                             </div>
@@ -144,6 +156,7 @@
                                                     class="form-control"
                                                     name="tag"
                                                     {{-- value="Bucharest, Cluj, Iasi, Timisoara, Piatra Neamt" --}}
+                                                    value="{{$inf->tag}}"
                                                     data-toggle="tags"/> {{-- </form> --}}
                                             </div>
                                         </div>
